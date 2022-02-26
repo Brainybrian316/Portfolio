@@ -112,9 +112,9 @@ nav a {
 /* Navigation End */
 
 /* Section About Start */
-/* section {
+section {
     box-align: center;
-} */
+}
 section h2 {
     text-align: center;
     margin-top: 100px;
@@ -143,4 +143,37 @@ section p {
     position: relative;
     margin: auto;
 
+}
+/* Section About End */
+/* Section Portfolio Start */
+  .column {
+      display: inline-block;
+      width: 20%;
+      padding: 0 10px;
+      margin: 50px;
+  }
+
+  .row {
+      margin: 0 -5px;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: black;
+  }
+
+@media screen and (max-width: 600px){
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
