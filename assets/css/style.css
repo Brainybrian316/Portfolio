@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding: 0;
+}
+/* Header Start */
+#vanta-canvas {
+width: 100vw;
+height: 50vh;
+}
+
+.inner_header {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 75px;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+}
+
+.highlight {
+color: blue;
+font-family: cursive;
+-webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: #b4b4b4;
+    font-family: cursive;
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    background-color: #b4b4b4;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 45% 3px; 
+    color: #b4b4b4;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+button:hover, button:focus{
+    background-color: grey;
+    color: blue;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+/* Header End */
