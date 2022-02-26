@@ -2,6 +2,13 @@
     margin:0;
     padding: 0;
 }
+body {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    background-color: #b4b4b4;
+}
+
 /* Header Start */
 #vanta-canvas {
 width: 100vw;
@@ -26,18 +33,17 @@ height: 50vh;
     align-content: normal;
 }
 
+header p {
+    color: #b4b4b4;
+    font-family: cursive;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50px;
+}
+
 .highlight {
 color: blue;
 font-family: cursive;
 -webkit-font-smoothing: antialiased;
-}
-
-body {
-    color: #b4b4b4;
-    font-family: cursive;
-    -webkit-font-smoothing: antialiased;
-    font-size: 25px;
-    background-color: #b4b4b4;
 }
 
 button {
@@ -52,7 +58,7 @@ button {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: 90px;
+    top: 25px;
     -webkit-font-smoothing: antialiased;
     transition: all 0.3s;
 }
@@ -87,3 +93,54 @@ button:hover span:after{
     right: 0;
 }
 /* Header End */
+
+/* navigation Start */
+nav {
+    background: blue;
+    border-bottom: solid 2px;
+    border-bottom-color: white;
+}
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Navigation End */
+
+/* Section About Start */
+/* section {
+    box-align: center;
+} */
+section h2 {
+    text-align: center;
+    margin-top: 100px;
+    /* border-bottom: solid 3px; */
+    color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+section h2::after {
+    content:"";
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    background: #000000;
+    margin: auto;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+}
+
+section p {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+
+}

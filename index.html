@@ -7,35 +7,87 @@
 </head>
 
     <body>
-       
+        <!-- Header Start -->
         <div id="vanta-canvas">
-              <header>
-            <h1 class="inner_header" class="flex">Hello, I'm&nbsp;&nbsp;
-                <span class="highlight">Brian Mojica.</span> 
-             <br>
-                I'm a full-stack web develop.
-            </h1>
-            <button class="flex" style="vertical-align:middle"><span>
-                View My Work
-            </span></button>
-        </header>
+            <header>
+                <h1 class="inner_header" class="flex" id="Home">
+                    <p>
+                     Hello, I'm&nbsp;&nbsp;
+                    <span class="highlight">Brian Mojica.</span> 
+                    <br>
+                    I'm a full-stack web developer.
+                    <button class="flex" style="vertical-align:middle"><span>
+                    View My Work
+                    </span></button>
+                    </p>
+                </h1>
+            </header>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-        <script>
-        VANTA.WAVES({
-          el: "#vanta-canvas",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 100.00,
-          minWidth: 100.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x102
-        })
-        </script>
-       
+        </header>
+        <!--Header End-->
+        <!-- Navigation Start -->
+       <nav>
+           <ul>
+               <li> 
+                    <a href="#Home">HOME</a>
+                </li>
+               <li>
+                   <a href="#About">ABOUT</a>
+                </li>
+               <li>
+                   <a href="#Portfolio">PORTFOLIO</a>
+                </li>
+               <li>
+                   <a href="#Blog">BLOG</a>
+                </li>
+               <li>
+                   <a href="#Contact">CONTACT</a>
+                </li>
+           </ul>
+       </nav>
+       <!--Navigation End-->
+       <!--Section About-->
+       <section>
+           <h2 id="About">ABOUT</h2>
+                <p>
+                    I'm a full stack developer seeking employment. 
+                    I have a passion developing webpages that are responsive, dynamic, and accessbile. 
+                    Animations and UI effects are skills I hope to sharpen. I will continually expand my knowledge in different platforms such as Python, JavaScript, and React.
+                </p>
+        </section>
+       <!--Section Portfolio-->
+       <section>
+           <h2 id="Portfolio">PORTFOLIO</h2>
+       </section>
+       <!--Section Blog-->
+       <section>
+           <h2 id="Blog">BLOG</h2>
+                <p>Under Construction</p>
+       </section>
+       <!--Section Contact-->
+       <section>
+           <h2 id="Contact">CONTACT</h2>
+       </section>
+
+
+
+       <!--script for header background Start-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+       <script>
+           VANTA.WAVES({
+            el: "#vanta-canvas",
+           mouseControls: true,
+            touchControls: true,
+           gyroControls: false,
+           minHeight: 100.00,
+           minWidth: 100.00,
+           scale: 1.00,
+           scaleMobile: 1.00,
+           color: 0x102
+            })
+       </script>
+       <!--script for header background End-->
 </body>
 
 </html>
