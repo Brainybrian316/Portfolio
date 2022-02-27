@@ -135,16 +135,34 @@ section h2::after {
     right: 0;
 }
 
-section p {
-    padding: 20px;
+.sa-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    max-width: 300px;
+    margin: 30px 350px;
     text-align: center;
-    position: relative;
-    margin: auto;
+    
+}
+.title {
+    color: blue;
+    font-size: 18px;
+}
+#aba {
+    font-size: 30px;
+    padding: 5px;
+    color: yellow;
+    align-items: center;
+    margin: 5px;
+}
 
+#sbody {
+    padding: 10px;
+    text-align: center;
+    position: flex;
+    display: inline-block;
 }
 
 /* Section About End */
-/* Section Portfolio Start  add flex section later */
+/* Section Projects Start add flex section later */
 .flip-card {
     background-color: transparent;
     width: 500px;
@@ -162,6 +180,7 @@ img{
     width: 100%;
     overflow: wrap;
     font-size: 22px;
+    text-align: center;
 }
 .flip-card-inner {
     position: relative;
@@ -182,6 +201,7 @@ img{
     height: 100%;
     -webkit-backgrace-visibility: hidden;
     backface-visibility: hidden;
+    text-align: center;
 }
 
 .flip-card-back {
@@ -191,6 +211,7 @@ img{
     text-align: center;
     text-overflow: none;
     font-size: 75%;
+    padding: 50px 0;
 }
 
 .button-2 {
@@ -276,7 +297,7 @@ img{
     color: rgb(9, 22, 254);
     width: 50%;
     margin-bottom: 15px;
-    margin-top: 5px;
+    margin-top: 20px;
     border-radius: 10px;
     margin-left: 250px;
 
@@ -314,6 +335,7 @@ img{
 .contact-form p{
     text-align: center;
     color: rgb(7, 39, 243);
-    font-style:italic
+    font-style:italic;
+    margin-top: 30px
 }
 /* Section CONTACT End */
