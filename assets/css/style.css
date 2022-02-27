@@ -117,7 +117,6 @@ section {
 section h2 {
     text-align: center;
     margin-top: 100px;
-    /* border-bottom: solid 3px; */
     color: black;
     position: relative;
     left: 50%;
@@ -219,7 +218,6 @@ img{
     text-decoration: none;
     color: #fff;
 }
-
 /* @media screen and (max-width: 600px){ */
     /* .column {
         width: 100%;
@@ -227,3 +225,95 @@ img{
         margin-bottom: 20px;
     }
 } */
+/* Section PORTFOLIO End */
+
+/* Section BLOG Start */
+.blog-card {
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+    border: 1px transparent #f1f1f1;
+    perspective: 1000px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 50px 20px;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    background-color: transparent;
+    color: yellow;
+}
+
+/*Section CONTACT Start */
+.form-input {
+    border: 1px solid white;
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    width: 50%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 1);
+    margin-left: 250px;
+}
+
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid white;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: rgb(9, 22, 254);
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-left: 250px;
+
+}
+.contact-form button {
+    width: 25%;
+    border: none;
+    background: rgba(255,255,255, 0.9);
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: 375px;
+}
+
+.contact-form button:hover {
+    color: white;
+    background: rgb(38, 0, 255, 0.5);
+}
+
+.contact-info a {
+    color: white;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: rgba(255, 255, 255, 0.224);
+    outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(0, 0, 0, 0.265);
+    outline: none;
+}
+.contact-form p{
+    text-align: center;
+    color: rgb(7, 39, 243);
+    font-style:italic
+}
+/* Section CONTACT End */
