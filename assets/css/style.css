@@ -42,7 +42,6 @@ header p {
 
 .highlight {
 color: blue;
-font-family: cursive;
 -webkit-font-smoothing: antialiased;
 }
 
@@ -144,36 +143,87 @@ section p {
     margin: auto;
 
 }
+
 /* Section About End */
-/* Section Portfolio Start */
-  .column {
-      display: inline-block;
-      width: 20%;
-      padding: 0 10px;
-      margin: 50px;
-  }
+/* Section Portfolio Start  add flex section later */
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 50px 20px;
+}
+img{
+    border-radius: 20px;
+}
+.back-text {
+    width: 100%;
+    overflow: wrap;
+    font-size: 22px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
 
-  .row {
-      margin: 0 -5px;
-  }
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
 
-  .row:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-  
-  .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
-      padding: 16px;
-      text-align: center;
-      background-color: black;
-  }
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backgrace-visibility: hidden;
+    backface-visibility: hidden;
+}
 
-@media screen and (max-width: 600px){
-    .column {
+.flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    text-overflow: none;
+    font-size: 75%;
+}
+
+.button-2 {
+    background-color: transparent;
+    border-radius: 20%; 
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s;
+}
+
+.button-2:hover {
+    opacity: 1;
+}
+
+.button-2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* @media screen and (max-width: 600px){ */
+    /* .column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
-}
+} */
