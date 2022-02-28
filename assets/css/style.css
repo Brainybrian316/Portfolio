@@ -229,7 +229,7 @@ button:hover span:after{
     transform: rotateY(180deg);
     text-align: center;
     text-overflow: none;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 /* Active Project Format DONE */
 
@@ -276,7 +276,7 @@ button:hover span:after{
     color: white;
     transform: rotateY(180deg);
     text-overflow: none;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 /* Older Projects Format DONE*/
 
@@ -396,7 +396,10 @@ button:hover span:after{
 
 .card-blog-link:hover {
     text-decoration: underline;
-
+}
+ p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 /*Section CONTACT Start */
