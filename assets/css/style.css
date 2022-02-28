@@ -138,7 +138,7 @@ button:hover span:after{
 .sa-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
     max-width: 300px;
-    margin: 30px 350px;
+    margin: 30px 40%;
     text-align: center;
     font-size: 18px;
     background-color: black;
@@ -160,6 +160,11 @@ button:hover span:after{
 .about p {
     padding: 10px;
     text-align: center;
+}
+
+.about-img {
+    width:100%;
+    border-radius:20px;
 }
 
 /* Section About END */
@@ -188,7 +193,7 @@ button:hover span:after{
 /* Active Project Format BEGIN*/
 .flip-card-1 {
     background-color: transparent;
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
@@ -199,15 +204,13 @@ button:hover span:after{
     border-radius: 20px;
 }
 .back-text-1 {
-    width: 100%;
-    font-size: auto;
-    text-align: center;
-    position: relative;
+    width: 50vw;
+    position: absolute;
 }
 .flip-card-inner-1 {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    width: 125vw;
+    height: 25vh;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -217,8 +220,8 @@ button:hover span:after{
 }
 .flip-card-front-1, .flip-card-back-1 {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 50vh;
     -webkit-backgrace-visibility: hidden;
     backface-visibility: hidden;
     text-align: center;
@@ -229,33 +232,34 @@ button:hover span:after{
     transform: rotateY(180deg);
     text-align: center;
     text-overflow: none;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 /* Active Project Format DONE */
 
 /* Older Projects Format BEGIN */
 .flip-card-2 {
     background-color: transparent;
-    width: 50%;
+    width: 50vw;
     height: 20vh;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     border-radius: 20px;
     display: flex;
+    margin: 5vh 0
 }
 .project-img-2{
     border-radius: 20px;
 }
 .back-text-2 {
-    width: 100%;
+    width: 50vw;
     font-size: auto;
     text-align: center;
     position: relative;
 }
 .flip-card-inner-2 {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+    height: 25vh;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -265,18 +269,20 @@ button:hover span:after{
 }
 .flip-card-front-2, .flip-card-back-2{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 50vw;
+    height: 25vh;
     -webkit-backgrace-visibility: hidden;
     backface-visibility: hidden;
     text-align: center;
 }
 .flip-card-back-2 {
+    width: 50vw;
+    height: 15vh;
     background-color: transparent;
     color: white;
     transform: rotateY(180deg);
     text-overflow: none;
-    font-size: 0.8em;
+    font-size: 0.4em;
 }
 /* Older Projects Format DONE*/
 
@@ -330,14 +336,13 @@ button:hover span:after{
 
 .blog-cards {
     margin: 0 auto;
-    max-width:1000px;
-    display: grid;
+    max-width:100vw;
     gap: 20px;
     font-family: sans-serif;
     padding-top: 30px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-evenly;
     align-items: baseline;
@@ -348,8 +353,8 @@ button:hover span:after{
 }
 
 .blog-card-image { 
- width: 100%;
- height: 150px;
+ width: 100vw;
+ height: 50vh;
  object-fit: cover;
  display: block;
  border: 2px solid #000000;
@@ -428,11 +433,11 @@ button:hover span:after{
     padding: 10px 15px;
     font-size: 16px;
     color: white;
-    width: 50%;
+    width: 50vw;
     margin-bottom: 15px;
     border-radius: 10px;
     background-color: rgba(255,255,255, 1);
-    margin-left: 250px;
+    margin-left: 250vw;
 }
 
 .form-input:focus {
@@ -446,11 +451,11 @@ button:hover span:after{
     padding: 7px 15px;
     font-size: 16px;
     color: rgb(9, 22, 254);
-    width: 50%;
+    width: 50vw;
     margin-bottom: 15px;
     margin-top: 20px;
     border-radius: 10px;
-    margin-left: 250px;
+    margin-left: 25vw;
 
 }
 .contact-form button {
@@ -491,13 +496,13 @@ button:hover span:after{
     margin-top: 30px
 }
 .b-container {
-    height: 200%;
+    height: 25vh;
     position: relative;
 }
 .b-center {
     margin: 0;
     position: absolute;
-    left: 50%;
+    left: 50vw;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
