@@ -1,11 +1,11 @@
 # Brian Mojica's Portfolio
 
 ## Table of Contents
-- [Description] (#description)
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [Credits] (#credits)
-- [License] (#license)
+- [Description] (#Description)
+- [Installation] (#Installation)
+- [Usage] (#Usage)
+- [Credits] (#Credits)
+- [License] (#License)
 
 ## Description
 
