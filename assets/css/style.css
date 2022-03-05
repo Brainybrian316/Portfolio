@@ -1,5 +1,7 @@
 * {
    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 body {
     color: #fff;
@@ -8,6 +10,26 @@ body {
     background-color: #b4b4b4;
     margin:0;
     padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+h1::after {
+    content:"";
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    background: #000000;
+    margin: auto;
+    bottom: -5px;
+    right: 0;
+    left:0;
 }
 
 /* Header START */
@@ -25,15 +47,6 @@ font-size: 6vmin;
     margin: 0 auto;
     text-align: center;
     
-}
-
-.flex {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: normal;
 }
 
 .inner_header p {
@@ -114,31 +127,26 @@ button:hover span:after{
 /* Navigation END*/
 
 /* Section About START*/
-.about h1 {
-    text-align: center;
-    margin-top: 100px;
-    color: black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%)
+
+.container {
+    margin: 30px 40px;
+    padding: 10px;
+    width: 500px;
 }
 
-.about h1::after {
-    content:"";
-    height: 3px;
-    width: 70px;
-    position: absolute;
-    background: #000000;
-    margin: auto;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+.flex-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    align-content: center;
+    flex-wrap:wrap;
 }
 
 .sa-card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
     max-width: 300px;
-    margin: 30px 40%;
+    margin: 30px 40px;
     text-align: center;
     font-size: 18px;
     background-color: black;
@@ -166,197 +174,72 @@ button:hover span:after{
     width:100%;
     border-radius:20px;
 }
-
 /* Section About END */
 
 /* Section Projects START */
-.projects h1 {
-    text-align: center;
-    margin-top: 100px;
-    color: black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%)
-}
-.projects h1::after {
-    content:"";
-    height: 3px;
-    width: 70px;
-    position: absolute;
-    background: #000000;
-    margin: auto;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+
+.flex-projects {
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: auto;
 }
 
-/* Active Project Format BEGIN*/
-.flip-card-1 {
-    background-color: transparent;
-    width: 100vw;
-    height: 50vh;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    border-radius: 20px;
+.row {
     display: flex;
-}
-.project-img-1{
-    border-radius: 20px;
-}
-.back-text-1 {
-    width: 50vw;
-    position: absolute;
-}
-.flip-card-inner-1 {
-    position: absolute;
-    width: 125vw;
-    height: 25vh;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-.flip-card-1:hover .flip-card-inner-1{
-    transform: rotateY(180deg);
-}
-.flip-card-front-1, .flip-card-back-1 {
-    position: absolute;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25px;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column #main-image {
+    margin-top: 8px;
+    vertical-align: middle;
     width: 100vw;
-    height: 50vh;
-    -webkit-backgrace-visibility: hidden;
-    backface-visibility: hidden;
-    text-align: center;
-}
-.flip-card-back-1 {
-    background-color: transparent;
-    color: white;
-    transform: rotateY(180deg);
-    text-align: center;
-    text-overflow: none;
-    font-size: 1.3em;
-}
-/* Active Project Format DONE */
-
-/* Older Projects Format BEGIN */
-.flip-card-2 {
-    background-color: transparent;
-    width: 50vw;
-    height: 20vh;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
+    padding: 10px;
     border-radius: 20px;
-    display: flex;
-    margin: 5vh 0
-}
-.project-img-2{
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 150%;
+    padding: 10px;
     border-radius: 20px;
-}
-.back-text-2 {
-    width: 50vw;
-    font-size: auto;
-    text-align: center;
-    position: relative;
-}
-.flip-card-inner-2 {
-    position: relative;
-    width: 50vw;
-    height: 25vh;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-.flip-card-2:hover .flip-card-inner-2{
-    transform: rotateY(180deg);
-}
-.flip-card-front-2, .flip-card-back-2{
-    position: absolute;
-    width: 50vw;
-    height: 25vh;
-    -webkit-backgrace-visibility: hidden;
-    backface-visibility: hidden;
-    text-align: center;
-}
-.flip-card-back-2 {
-    width: 50vw;
-    height: 15vh;
-    background-color: transparent;
-    color: white;
-    transform: rotateY(180deg);
-    text-overflow: none;
-    font-size: 0.4em;
-}
-/* Older Projects Format DONE*/
-
-.button-2 {
-    background-color: transparent;
-    border-radius: 20%; 
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 25px;
-    -webkit-font-smoothing: antialiased;
-    transition: all 0.3s;
-}
-
-.button-2:hover {
-    opacity: 1;
-}
-
-.button-2 a {
-    text-decoration: none;
-    color: #fff;
-}
+  }
 /* Section Projects END */
 
 /* Section Blog START */
-.blog h1 {
-    text-align: center;
-    margin-top: 100px;
-    color: black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%)
-}
-.blog h1::after {
-    content:"";
-    height: 3px;
-    width: 70px;
-    position: absolute;
-    background: #000000;
-    margin: auto;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-}
+
+.flex-blog {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+} 
 
 .blog-cards {
     margin: 0 auto;
-    max-width:100vw;
+    width:400px;
     gap: 20px;
     font-family: sans-serif;
     padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    align-items: baseline;
-    
 }
 .blog-card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
 }
 
 .blog-card-image { 
- width: 100vw;
- height: 50vh;
+ width: 400px;
  object-fit: cover;
- display: block;
+ display: flex;
  border: 2px solid #000000;
 }
 
@@ -402,30 +285,20 @@ button:hover span:after{
 .card-blog-link:hover {
     text-decoration: underline;
 }
+
  p {
     margin-bottom: 0;
     margin-top: 0;
 }
 
 /*Section CONTACT Start */
-.blog h1 {
-    text-align: center;
-    margin-top: 100px;
-    color: black;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%)
-}
-.blog h1::after {
-    content:"";
-    height: 3px;
-    width: 70px;
-    position: absolute;
-    background: #000000;
-    margin: auto;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+
+.flex-contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
 }
 .form-input {
     border: 1px solid white;
@@ -433,11 +306,11 @@ button:hover span:after{
     padding: 10px 15px;
     font-size: 16px;
     color: white;
-    width: 50vw;
+    width: 50px;
     margin-bottom: 15px;
     border-radius: 10px;
     background-color: rgba(255,255,255, 1);
-    margin-left: 250vw;
+    margin-left: 250px;
 }
 
 .form-input:focus {
@@ -459,7 +332,7 @@ button:hover span:after{
 
 }
 .contact-form button {
-    width: 200%;
+    width: 200px;
     border: none;
     background: rgba(255,255,255, 0.9);
     color: black;
@@ -496,7 +369,7 @@ button:hover span:after{
     margin-top: 30px
 }
 .b-container {
-    height: 25vh;
+    height: 25px;
     position: relative;
 }
 .b-center {
@@ -555,3 +428,16 @@ button:hover span:after{
        display: block;
    }
 }
+@media screen and (max-width: 800px) { */
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+    @media screen and (max-width: 600px) { */
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

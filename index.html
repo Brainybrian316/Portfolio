@@ -2,7 +2,7 @@
 <html lang="en_US">
     <head>
         <meta charset="UTF-8" />
-        <title>Portfolio</title>
+        <title>Brian Mojica Portfolio</title>
         <link rel="stylesheet" href="./assets/css/style.css" > 
 </head>
 
@@ -46,19 +46,14 @@
                     <a href="https://docs.google.com/document/d/1PeP8jPx4ct_WFCPPNeYYgJaiSRx9p8il5QjwZ7s0wbQ/edit?usp=sharing" target="_blank">RESUME</a>
                     <a id="resume" href="https://drive.google.com/file/d/1uVWXW7AULRBQBeXEblFfHNawPX-pHrJC/view?usp=sharing"></a>
                 </li>
-            </div>
+        </div>
        <!--Navigation END-->
 
        <!--Section About START-->
-       <div class="about" class="flex">
-           <h1 id="About">ABOUT</h1> 
-                <p >
-                    I'm a full stack developer seeking employment. 
-                    I have a passion developing webpages that are responsive, dynamic, and accessbile. 
-                    Animations and UI effects are skills I hope to sharpen. I will continually expand my knowledge in different platforms such as Python, JavaScript, and React.
-                </p>
+        <h1 id="About">ABOUT</h1> 
+            <div class="flex-about">
                 <div class="sa-card">
-                <img src="/assets/images/Prof-pic.png" alt="Brian" class="about-img">
+                <img src="./assets/images/Prof-pic.png" alt="Brian" class="about-img">
                 <p>Brian Mojica</p>
                 <p class="title">Full-Stack Web Developer</p>
                 <p>University of Central Florida</p>
@@ -67,52 +62,30 @@
                     <a href="https://www.facebook.com/"><i class="fa fa-facebook" id="fancy-font"></i></a>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                 </div>
+                <div>
+                    <p class="container flex-about">
+                        I'm a full stack developer seeking employment. 
+                        I have a passion developing webpages that are responsive, dynamic, and accessbile. 
+                        Animations and UI effects are skills I hope to sharpen. I will continually expand my knowledge in different platforms such as Python, JavaScript, and React.
+                    </p>
+                </div>
             </div>
         <!--Section About END-->
 
        <!--Section Projects  START-->
-       <div class="projects">
-           <h1 id="Portfolio">PROJECTS</h1>
-                <div class="flip-card-1">
-                    <div class="flip-card-inner-1">
-                        <div class="flip-card-front-1">
-                            <img src="assets/images/run-buddy-card.png" alt="Webpage" style="width:100%" height="100%" class="project-img-1">
-                        </div>
-                        <div class="flip-card-back-1">
-                            <div class="back-text-1">
-                                <div>
-                                    <h2>Run Buddy</h2>
-                                    <p class="highlight"> HTML / CSS</p>
-                                    <p>A webpage for Run Buddy. They are a company that matches runners with personal trainers. </p>
-                                    <button class="button-2"><a href="https://brainybrian316.github.io/run-buddy/">View</a></button>
-                                </div>
-                            </div>
-                        </div>
+        <h1 id="Portfolio">PROJECTS</h1>
+            <div class="flex-projects">
+                <div class="row">
+                    <div class="column">
+                        <a href="https://brainybrian316.github.io/run-buddy/"><img src="assets/images/run-buddy-card.png" id="main-image" alt="Webpage" ></a>
+                        <a href="https://brainybrian316.github.io/Refactoring-Horiseon/"><img src="assets/images/Refactor.png"   alt="Webpage"></a>
                     </div>
                 </div>
-
-                <div class="flip-card-2">
-                    <div class="flip-card-inner-2">
-                        <div class="flip-card-front-2">
-                            <img src="assets/images/Refactor.png" alt="Webpage" style="width:100%" height="100%" class="project-img-2">
-                        </div>
-                        <div class="flip-card-back-2">
-                            <div class="back-text-2">
-                                <div>
-                                    <h2>Horiseon</h2>
-                                    <p class="highlight"> HTML / CSS</p>
-                                    <p>A marketing agencies webpage, which was refactored to make it more accessible.</p>
-                                    <button class="button-2"><a href="https://brainybrian316.github.io/Refactoring-Horiseon/">View</a></button>
-                                </div>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-         </div>
+            </div>
 
        <!--Section Blog-->
-       <div class="blog">
-           <h1 id="Blog">BLOG</h1>
+       <h1 id="Blog">BLOG</h1>
+            <div class="flex-blog"> 
                 <div class="blog-cards">
                     <div class="blog-card">
                         <img class="blog-card-image" src="https://fakeimg.pl/400x300/009578/fff/" alt="">
@@ -120,13 +93,13 @@
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
                                 </p>
-                                 <p>
+                                <p>
                                     Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
                                 </p>
                             </div>
                             <div class="blog-card-info">
                                 <div>
-                                     <i class="fa">&#xf087;</i>310
+                                    <i class="fa">&#xf087;</i>310
                                 </div>
                                 <div>
                                     <a href="./" class="blog-card-link">View Article</a>
@@ -141,33 +114,13 @@
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
                                 </p>
-                                 <p>
-                                    Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
-                                </p>
-                            </div>
-                            <div class="blog-card-info">
-                                <div>
-                                     <i class="fa">&#xf087;</i>310
-                                </div>
-                                <div>
-                                    <a href="./" class="blog-card-link">View Article</a>
-                                </div>
-                        </div>
-                    </div>
-                </div><div class="blog-cards">
-                    <div class="blog-card">
-                        <img class="blog-card-image" src="https://fakeimg.pl/400x300/009578/fff/" alt="">
-                            <div class="blog-card-content">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
-                                </p>
-                                 <p>
                                     Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
                                 </p>
                             </div>
                             <div class="blog-card-info">
                                 <div>
-                                     <i class="fa">&#xf087;</i>310
+                                    <i class="fa">&#xf087;</i>310
                                 </div>
                                 <div>
                                     <a href="./" class="blog-card-link">View Article</a>
@@ -175,32 +128,54 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="blog-cards">
+                    <div class="blog-card">
+                        <img class="blog-card-image" src="https://fakeimg.pl/400x300/009578/fff/" alt="">
+                            <div class="blog-card-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis fugit autem qui at.
+                                </p>
+                                <p>
+                                    Alias itaque praesentium eum, pariatur consequatur ducimus asperiores accusantium velit minima?
+                                </p>
+                            </div>
+                            <div class="blog-card-info">
+                                <div>
+                                    <i class="fa">&#xf087;</i>310
+                                </div>
+                                <div>
+                                    <a href="./" class="blog-card-link">View Article</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
        <!--Section Contact-->
-       <div class="contact-form">
-           <h1 id="Contact">CONTACT</h1>
+       <h1 id="Contact">CONTACT</h1>
+            <div class="contact-form flex-contact">
                 <p>Have a question or want to work together?</p>
-           <form>
-               <label for="contact-name"></label>
-               <input type="text" id="contact-name" placeholder="Your Name" />
+                    <form>
+                        <label for="contact-name"></label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
 
-               <label for="email"></label>
-               <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                        <label for="email"></label>
+                        <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
 
-               <label for="contact-message"></label>
-               <textarea id="contact-message" placeholder="Message"></textarea>
-             </form>      
-                <div class="b-container">
-                    <div class="b-center">
-                        <button>Submit</button>
+                        <label for="contact-message"></label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+                    </form>      
+                    <div class="b-container">
+                        <div class="b-center">
+                            <button>Submit</button>
+                        </div>
                     </div>
-                </div>
-        </div>
-</body>
+            </div>
+
 <!--script for header background Start-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-<script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
     VANTA.WAVES({
      el: "#vanta-canvas",
     mouseControls: true,
@@ -212,6 +187,8 @@
     scaleMobile: 1.00,
     color: 0x102
      })
-</script>
+    </script>
 <!--script for header background End-->
+</body>
+
 </html>
