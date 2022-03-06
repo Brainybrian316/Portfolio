@@ -26,7 +26,7 @@ I learned alot creating this portfolio I was able to input and practice a set of
 No installation necessary simply click on the following link to view the deployed website:
 https://github.com/Brainybrian316/Portfolio
 
-    ## Usage
+## Usage
 My portfolio to showcase my skills and different projects I am working on.
 
 ![ScreenShot](/assets/images/Portfolio-page.png)

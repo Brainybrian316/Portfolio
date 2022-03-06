@@ -1,16 +1,18 @@
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     font-size: 25px;
     background-color: #b4b4b4;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
+
 h1 {
     text-align: center;
     margin-top: 100px;
@@ -21,7 +23,7 @@ h1 {
 }
 
 h1::after {
-    content:"";
+    content: "";
     height: 3px;
     width: 70px;
     position: absolute;
@@ -29,24 +31,24 @@ h1::after {
     margin: auto;
     bottom: -5px;
     right: 0;
-    left:0;
+    left: 0;
 }
 
 /* Header START */
 #vanta-canvas {
-width: 100vw;
-height: 50vh;
-display: flex;
-align-items: center;
-font-weight: bold;
-font-size: 6vmin;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 6vmin;
 }
 
 .inner_header {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    
+
 }
 
 .inner_header p {
@@ -56,13 +58,13 @@ font-size: 6vmin;
 }
 
 .highlight {
-color: blue;
--webkit-font-smoothing: antialiased;
+    color: blue;
+    -webkit-font-smoothing: antialiased;
 }
 
 button {
     background-color: transparent;
-    border-radius: 45% 3px; 
+    border-radius: 45% 3px;
     color: #b4b4b4;
     padding: 10px 20px;
     text-decoration: none;
@@ -93,8 +95,8 @@ button span:after {
     transition: 0.3s;
 }
 
-button:hover, 
-button:focus{
+button:hover,
+button:focus {
     background-color: grey;
     color: blue;
 }
@@ -103,10 +105,11 @@ button:hover span {
     padding-right: 25px;
 }
 
-button:hover span:after{
+button:hover span:after {
     opacity: 1;
     right: 0;
 }
+
 /* Header END */
 
 /* navigation START */
@@ -115,6 +118,7 @@ button:hover span:after{
     border-bottom: solid 3px;
     border-bottom-color: white;
 }
+
 .nav li {
     display: inline-block;
     margin-left: 30px;
@@ -124,6 +128,7 @@ button:hover span:after{
     text-decoration: none;
     color: #fff;
 }
+
 /* Navigation END*/
 
 /* Section About START*/
@@ -140,11 +145,11 @@ button:hover span:after{
     justify-content: space-evenly;
     flex-basis: auto;
     align-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-.sa-card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+.sa-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: 30px 40px;
     text-align: center;
@@ -153,10 +158,12 @@ button:hover span:after{
     border-radius: 20px;
 
 }
+
 .title {
     color: blue;
     font-size: 18px;
 }
+
 #fancy-font {
     font-size: 30px;
     padding: 5px;
@@ -171,15 +178,16 @@ button:hover span:after{
 }
 
 .about-img {
-    width:100%;
-    border-radius:20px;
+    width: 100%;
+    border-radius: 20px;
 }
+
 /* Section About END */
 
 /* Section Projects START */
 
 .flex-projects {
-    display:flex; 
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -190,57 +198,59 @@ button:hover span:after{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  .column {
+}
+
+.column {
     flex: 25px;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  .column #main-image {
+}
+
+.column #main-image {
     margin-top: 8px;
     vertical-align: middle;
     width: 100vw;
     padding: 10px;
     border-radius: 20px;
-  }
+}
 
-  .column img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 150%;
     padding: 10px;
     border-radius: 20px;
-  }
+}
+
 /* Section Projects END */
 
 /* Section Blog START */
 
 .flex-blog {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis: auto;
-} 
+}
 
 .blog-cards {
     margin: 0 auto;
-    width:400px;
+    width: 400px;
     gap: 20px;
     font-family: sans-serif;
     padding-top: 30px;
 }
+
 .blog-card {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
 }
 
-.blog-card-image { 
- width: 400px;
- object-fit: cover;
- display: flex;
- border: 2px solid #000000;
+.blog-card-image {
+    width: 400px;
+    object-fit: cover;
+    display: flex;
+    border: 2px solid #000000;
 }
 
 .blog-card-content p {
@@ -252,11 +262,11 @@ button:hover span:after{
     border-right: 2px solid #000000;
 }
 
-.blog-card-content > p:first-of-type {
+.blog-card-content>p:first-of-type {
     margin-top: 0;
 }
 
-.blog-card-content > p:last-of-type {
+.blog-card-content>p:last-of-type {
     margin-bottom: 0;
 }
 
@@ -286,20 +296,21 @@ button:hover span:after{
     text-decoration: underline;
 }
 
- p {
+p {
     margin-bottom: 0;
     margin-top: 0;
 }
 
 /*Section CONTACT Start */
 
-.flex-contact{
-    display:flex;
+.flex-contact {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis: auto;
 }
+
 .form-input {
     border: 1px solid white;
     display: block;
@@ -309,16 +320,17 @@ button:hover span:after{
     width: 50px;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     margin-left: 250px;
 }
 
 .form-input:focus {
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     outline: none;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     border: 1px solid white;
     display: block;
     padding: 7px 15px;
@@ -331,10 +343,11 @@ button:hover span:after{
     margin-left: 25vw;
 
 }
+
 .contact-form button {
     width: 200px;
     border: none;
-    background: rgba(255,255,255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     color: black;
     text-align: center;
     padding: 15px 0;
@@ -353,25 +366,30 @@ button:hover span:after{
     color: white;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     background-color: rgba(255, 255, 255, 0.224);
     outline: none;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
     background-color: rgba(0, 0, 0, 0.265);
     outline: none;
 }
-.contact-form p{
+
+.contact-form p {
     text-align: center;
     color: rgb(7, 39, 243);
-    font-style:italic;
+    font-style: italic;
     margin-top: 30px
 }
+
 .b-container {
     height: 25px;
     position: relative;
 }
+
 .b-center {
     margin: 0;
     position: absolute;
@@ -379,65 +397,74 @@ button:hover span:after{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 /* Section Contact END */
 
 /* media queries */
 
-@media screen and (max-width: 575px){ */
-     .column {
+@media screen and (max-width: 575px) {
+    */ .column {
         width: 100%;
         display: block;
     }
-    img{
+
+    img {
         width: 100%;
         display: block;
         margin-bottom: 20px;
     }
-    .card{
+
+    .card {
         width: 100%;
         display: block;
     }
 }
 
-@media screen and (max-width: 980px){ */
-    .column {
-       width: 100%;
-       display: block;
-   }
-   img{
-       width: 100%;
-       display: block;
-   }
-   .card{
-    width: 100%;
-    display: block;
-
-}
-}
-@media screen and (max-width: 768px){ */
-    .column {
-       width: 100%;
-       display: block;
-   }
-   img{
-       width: 100%;
-       display: block;
-   }
-   .card{
-       width: 100%;
-       display: block;
-   }
-}
-@media screen and (max-width: 800px) { */
-    .column {
-      flex: 50%;
-      max-width: 50%;
+@media screen and (max-width: 980px) {
+    */ .column {
+        width: 100%;
+        display: block;
     }
-  }
 
-    @media screen and (max-width: 600px) { */
-    .column {
-      flex: 100%;
-      max-width: 100%;
+    img {
+        width: 100%;
+        display: block;
     }
-  }
+
+    .card {
+        width: 100%;
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    */ .column {
+        width: 100%;
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    */ .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    */ .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
