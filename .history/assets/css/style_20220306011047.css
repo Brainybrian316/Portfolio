@@ -209,7 +209,7 @@ button:hover span:after {
 .column #main-image {
     margin-top: 8px;
     vertical-align: middle;
-    width: 150%;
+    width: 100vw;
     padding: 10px;
     border-radius: 20px;
 }
