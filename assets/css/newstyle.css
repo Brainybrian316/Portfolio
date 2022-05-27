@@ -1,9 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+root {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #b4b4b4;
+}
+
 .highlight {
     color: blue;
 }
 
 .hero {
-    height: 30vh;
+    height: 40vh;
 }
 
 #btn-hero {
@@ -53,3 +68,8 @@
     opacity: 1;
     right: 0;
 }
+
+.nav-link {
+    color: #d4d2d2;
+}
+
