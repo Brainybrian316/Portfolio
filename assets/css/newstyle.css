@@ -1,0 +1,55 @@
+.highlight {
+    color: blue;
+}
+
+.hero {
+    height: 30vh;
+}
+
+#btn-hero {
+    background-color: transparent;
+    border-radius: 45% 3px;
+    color: #b4b4b4;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s;
+}
+
+#btn-hero span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+#btn-hero span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+#btn-hero:hover,
+#btn-hero:focus {
+    background-color: grey;
+    color: blue;
+}
+
+#btn-hero:hover span {
+    padding-right: 25px;
+}
+
+#btn-hero:hover span:after {
+    opacity: 1;
+    right: 0;
+}
