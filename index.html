@@ -15,7 +15,7 @@
 <body>
     <!-- Header START -->
     <div id="vanta-canvas">
-        <div class="container hero">
+        <div class="container hero" id="Home">
             <div class="row">
                 <div class="col-md-12 mt-4 pt-4 fs-1">
                     <div class="text-center text-light">
@@ -24,27 +24,13 @@
                             <br>
                             I'm a Full-Stack Web Developer.
                         </p>
-                        <a href="#about" class="btn btn-primary" id="btn-hero"><span>View My Work</span></a>
+                        <a href="#Projects" class="btn btn-primary" id="btn-hero"><span>View My Work</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="inner_header" class="flex" id="Home">
-            <p>
-                Hello, I'm&nbsp;&nbsp;
-                <span class="highlight">Brian Mojica.</span>
-                <br>
-                I'm a full-stack web developer.
-                <form method="get" action="#Portfolio">
-                    <button class="flex" style="vertical-align:middle"><span>
-                            View My Work
-                        </span></button>
-                </form>
-            </p>
-        </div>
-    </div> -->
-    <!--Header END-->
+    <!-- Header END -->
 
 
     <!-- Navigation START -->
@@ -70,13 +56,13 @@
                             <a class="nav-link" href="#About">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Projects">PROJECTS</a>
+                            <a class="nav-link" href="#Projects">PROJECTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Blog">BLOG</a>
+                            <a class="nav-link" href="#Blog">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/Contact">CONTACT</a>
+                            <a class="nav-link" href="#Contact">CONTACT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
@@ -93,9 +79,9 @@
     <!-- About START -->
     <div class="container">
         <div class="row">
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5 pt-5">
                 <div class="text-center">
-                    <h1>About</h1>
+                    <h1 id="About">About</h1>
                 </div>
             </div>
         </div>
@@ -191,9 +177,9 @@
             </div>
 
             <!-- section Project START -->
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5 pt-5">
                 <div class="text-center">
-                    <h1>Projects</h1>
+                    <h1 id="Projects">Projects</h1>
                 </div>
             </div>
 
@@ -247,9 +233,9 @@
 
 
             <!--Section Blog-->
-            <div class="col-12">
+            <div class="col-12 mt-5 mb-3">
                 <div class="text-center text-dark">
-                    <h1>Blog</h1>
+                    <h1 id="Blog">Blog</h1>
                 </div>
             </div>
 
@@ -304,9 +290,9 @@
             </div>
 
                 <!--Section Contact-->
-                <div class="col-12 mt-5">
+                <div class="col-12 mt-5 pt-5">
                     <div class="text-center text-dark">
-                        <h1>Contact</h1>
+                        <h1 id="Contact">Contact</h1>
                     </div>
                 </div>
 
@@ -330,32 +316,11 @@
                                     <textarea class="form-control" id="message" name="message" rows="3"
                                         placeholder="Enter your message"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                <button type="submit" class="btn btn-secondary mt-3">Submit</button>
                             </form>
                         </div>
                         </div>
                     </div>
-            
-
-                <!-- <h1 id="Contact">CONTACT</h1>
-    <div class="contact-form flex-contact">
-        <p>Have a question or want to work together?</p>
-        <form>
-            <label for="contact-name"></label>
-            <input type="text" id="contact-name" placeholder="Your Name" />
-
-            <label for="email"></label>
-            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
-
-            <label for="contact-message"></label>
-            <textarea id="contact-message" placeholder="Message"></textarea>
-        </form>
-        <div class="b-container">
-            <div class="b-center">
-                <button>Submit</button>
-            </div>
-        </div>
-    </div> -->
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
                 </script>
