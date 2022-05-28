@@ -73,3 +73,28 @@ body {
     color: #d4d2d2;
 }
 
+
+
+img{
+	max-width: 100%;
+    max-height: 80%;
+}
+.gallery{
+	padding: 80px 0;
+}
+.gallery img{
+     background-color: aqua;
+	padding: 5px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

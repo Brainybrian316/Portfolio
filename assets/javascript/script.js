@@ -13,3 +13,16 @@ VANTA.WAVES({
     scaleMobile: 1.00,
     color: 0x102,
 });
+
+
+document.addEventListener('click', function (event) {
+if(event.target.classList.contains("gallery-item")){
+  const src = event.target.getAttribute('src');
+  document.querySelector(".modal-img").src = src;
+  const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+  myModal.show();
+
+}
+});
+
+const blog = document.querySelector('#blog').addEventListener('submit', blog);
