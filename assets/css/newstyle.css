@@ -83,8 +83,6 @@ img{
 	padding: 80px 0;
 }
 .gallery img{
-     background-color: aqua;
-	padding: 5px;
 	width: 100%;
 	box-shadow: 0 0 15px rgba(0,0,0,0.3);
 	cursor: pointer;
@@ -97,4 +95,19 @@ img{
 a {
     text-decoration: none;
     color: white;
+}
+
+#name,
+#email,
+#message {
+    opacity: 70%;
+    background-color: rgb(59, 117, 241);
+    color: rgb(249, 248, 251);
+    font-weight: bold;
+}
+
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(241, 229, 229);
+    opacity: 1; /* Firefox */
 }
