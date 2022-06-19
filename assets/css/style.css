@@ -83,18 +83,7 @@ body {
     font-weight: bold;
 }
 
-
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(241, 229, 229);
     opacity: 1; /* Firefox */
 }
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: calc(10% + 1vw + 1vh);
-  }
