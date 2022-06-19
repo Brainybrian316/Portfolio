@@ -74,9 +74,9 @@ body {
 }
 
 
-#name,
-#email,
-#message {
+#Name,
+#Email,
+#Message {
     opacity: 70%;
     background-color: rgb(59, 117, 241);
     color: rgb(249, 248, 251);

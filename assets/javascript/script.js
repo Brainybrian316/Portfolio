@@ -15,14 +15,31 @@ VANTA.WAVES({
 });
 
 
-document.addEventListener('click', function (event) {
-if(event.target.classList.contains("gallery-item")){
-  const src = event.target.getAttribute('src');
-  document.querySelector(".modal-img").src = src;
-  const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
-  myModal.show();
+async function ContactFormHandler(event) {
 
+  event.preventDefault();
+
+  const Name = document.querySelector('#Name').value.trim();
+  const Email = document.querySelector('#Email').value.trim();
+  const Message = document.querySelector('#Message').value.trim();
+
+
+  const response = await fetch(`https://sheet.best/api/sheets/795a5608-86fa-46c6-837c-a80a0f1cc0ac`, {
+      method: 'post',
+      body: JSON.stringify({
+        Name,
+        Email,
+        Message
+      }),
+      headers: { 'Content-Type': 'application/json' },
+  });
+  if (response.ok) {
+      document.location.replace('/');
+  } else {
+      alert(response.statusText);
+  }
 }
-});
 
-const blog = document.querySelector('#blog').addEventListener('submit', blog);
+document.querySelector('.contact-form').addEventListener('submit', ContactFormHandler);
+
+
