@@ -21,6 +21,13 @@ body {
     height: 40vh;
 }
 
+#About,
+#Projects,
+#Blog,
+#Contact {
+    text-decoration: underline;
+}
+
 #btn-hero {
     background-color: transparent;
     border-radius: 45% 3px;
