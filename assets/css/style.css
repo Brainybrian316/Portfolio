@@ -28,6 +28,11 @@ body {
     text-decoration: underline;
 }
 
+#project-image{
+    width: 100%;
+    height: 15vh;
+}
+
 #btn-hero {
     background-color: transparent;
     border-radius: 45% 3px;
