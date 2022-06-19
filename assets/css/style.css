@@ -28,7 +28,9 @@ body {
     text-decoration: underline;
 }
 
-
+#no-image{
+    max-height: 10rem;
+}
 
 #btn-hero {
     background-color: transparent;
