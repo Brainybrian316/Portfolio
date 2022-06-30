@@ -29,7 +29,7 @@ https://github.com/Brainybrian316/Portfolio
 ## Usage
 My portfolio to showcase my skills and different projects I am working on.
 
-![ScreenShot](/assets/images/Portfolio-page.png)
+![ScreenShot](./assets/images/port.png)
 
 
 ## Credits
