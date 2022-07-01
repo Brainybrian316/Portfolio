@@ -4,10 +4,10 @@ export default function About() {
   return (
     <div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mt-5 pt-5">
-            <div class="text-center">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 mt-5 pt-5">
+            <div className="text-center">
               <h1 id="About">About</h1>
             </div>
           </div>
@@ -18,7 +18,7 @@ export default function About() {
         <div className="row">
           <div className="d-flex justify-content-center col-lg-6 col-md-6 col-sm-12 mt-5">
             <div className="card border-dark bg-dark text-white"  style={{ width: "30rem" }}>
-              <img src={require("../../assets/images/Prof-pic.png")} alt="Brian" class="rounded card-img-top" />
+              <img src={require("../../assets/images/Prof-pic.png")} alt="Brian" className="rounded card-img-top" />
 
 						<div className="card-body">
 							<h5 className="card-title">Brian Mojica</h5>
@@ -32,21 +32,21 @@ export default function About() {
 							<li className="list-group-item bg-dark text-white"><i className="fa-regular fa-bookmark"></i> HTML, CSS, JavaScript, & React.js <i className="fa-regular fa-heart"></i></li>
 						</ul>
 
-						<div class="card-body text-center fs-3">
-							<a href="https://github.com/Brainybrian316"><i class="fa-brands fa-github-alt px-2 text-warning"></i></a>
-							<a href="https://www.linkedin.com/in/brian-mojica-63b638221"><i class="fa-brands fa-linkedin px-2 text-warning"></i></a>
-							<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook px-2 text-warning"></i></a>
-							<a href="mailto:brainybrian316@gmail.com"><i class="fa-solid fa-envelope px-2 text-warning"></i></a>
+						<div className="card-body text-center fs-3">
+							<a href="https://github.com/Brainybrian316"><i className="fa-brands fa-github-alt px-2 text-warning"></i></a>
+							<a href="https://www.linkedin.com/in/brian-mojica-63b638221"><i className="fa-brands fa-linkedin px-2 text-warning"></i></a>
+							<a href="https://www.facebook.com/"><i className="fa-brands fa-facebook px-2 text-warning"></i></a>
+							<a href="mailto:brainybrian316@gmail.com"><i className="fa-solid fa-envelope px-2 text-warning"></i></a>
 						</div>
 						</div>
           </div>
 
-			<div class="d-flex justify-content-center col-lg-6 col-md-6 col-sm-12 mt-5">
-					<div class="card border-dark text-bg-dark" 
+			<div className="d-flex justify-content-center col-lg-6 col-md-6 col-sm-12 mt-5">
+					<div className="card border-dark text-bg-dark" 
 					 style={{ width: "32rem" }}>
-						<div class="card-body">
-							<h4 class="card-title">Technical Skills</h4>
-							<p class="card-text"/>
+						<div className="card-body">
+							<h4 className="card-title">Technical Skills</h4>
+							<p className="card-text"/>
 
 								<div>
 										<p>Languages: HTML, CSS, JavaScript,</p>
@@ -57,13 +57,13 @@ export default function About() {
 												Core Concepts: Security and Session Storage, User Authentication, Responsive Design,  Cookies, Local Storage
 										</p>
 
-										<p class="pt-3 mt-3">
+										<p className="pt-3 mt-3">
 									Thanks for viewing my profile. Above is a table showcasing my confidence in the skills listed.
 								</p>
-								<p class="pt-3 mt-3">
+								<p className="pt-3 mt-3">
 									I am innovative problem-solver with a passion for developing apps. I am continuing my studies by expanding into IOS development. My goal and desire are to leave my mark in the tech world whether that be through open source contributions, project tutorials, and of course the career opportunities I endeavor in.
 								</p>
-								<p class="pt-3 mt-3">
+								<p className="pt-3 mt-3">
 									What I bring to every project:
 									<br/>
 									<ul>
