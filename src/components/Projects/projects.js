@@ -1,11 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+import { Image } from 'react-bootstrap';
+import ListGroup from 'react-bootstrap/ListGroup';
+// import ListGroupItem from 'react-bootstrap/ListGroupItem';
+import React from 'react';
 
-
-export default function projects() {
 
   const projects = [{
     image: require('../../assets/images/Dev.png'),
@@ -13,15 +15,67 @@ export default function projects() {
     description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
     languages: ['HTML', 'CSS', 'JavaScript'],
     type: 'Front-End & Back-End',
+    github: 'https://github.com/Brainybrian316/DevCloud',
+    website: 'https://brainybrian316.github.io/DevCloud/',
   }
 ]
-  return (
-    <section>
 
-    </section>
-  );
-}
+  function GalleryModal(props) {
+    return (
+      <Modal 
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered>
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            {projects[0].title}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            {projects[0].description}
+          </p>
+          <ListGroup className="list-group-flush">
+            <ListGroup.Item>
+              {projects[0].languages.map((language, index) => {
+                return (
+                  <span key={index}>{language}</span>
+                )
+              })}
+            </ListGroup.Item>
+            <ListGroup.Item>
+              {projects[0].type}
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <a href={projects[0].github}>GitHub</a>
+            </ListGroup.Item>
+          </ListGroup>
+          </Modal.Body>
+          <Modal.Footer>
+          <Button variant="primary" href={projects[0].website}>Visit Site</Button>
+            <Button onClick={props.onHide}>Close</Button>
+          </Modal.Footer>
+      </Modal>
+    )
+  }
 
+  export default function Projects() {
+    const [modalShow, setModalShow] = React.useState(false);
+  
+    return (
+      <>
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          Launch vertically centered modal
+        </Button>
+  
+        <GalleryModal
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+      </>
+    );
+  }
 /* <div>
       <div className="container">
         <div className="row">
