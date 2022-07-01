@@ -1,12 +1,12 @@
 import About from  './components/About';
-import Projects from './components/Projects';
+import featuredProjects from './components/Projects/featured';
 
 
 function App() {
   return (
     <div>
       <About/>
-      <Projects/>
+      <featuredProjects/>
     </div>
   );
 }
