@@ -23,7 +23,7 @@ export default function Contact() {
 						<label for="Message" className="form-label">Message:</label>
 						<textarea name="Message" className="form-control" id="Message" rows="3" placeholder="Enter your message" required></textarea>
 
-						<button type="submit" className="btn btn-secondary mt-3">Submit</button>
+						<button type="submit" className="btn btn-primary mt-3">Submit</button>
 
 					</form>
 				</div>
