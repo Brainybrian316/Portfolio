@@ -10,17 +10,17 @@ export default function About() {
     <section id="About">
       <Container>
         <Row>
-          <Col md={12} className="mt-5 pt-5">
+          <Col className="mt-5 pt-5">
             <h1 className="text-center">About Me</h1>
             <hr />
           </Col>
         </Row>
       </Container>
 
-      <Container>
-        <Row>
-          <Col md={6} sm={12}>
-            <Card style={{ width: '20rem' }} className="bg-black text-white ">
+      <Container fluid>
+				<Row>
+          <Col md={6} sm={12} className="d-flex justify-content-center">
+            <Card style={{ width: '50rem' }} className="bg-black text-white ">
               <Card.Img
                 variant="top"
                 src={require('../../assets/images/Prof-pic.png')}
@@ -59,9 +59,11 @@ export default function About() {
               </Card.Body>
             </Card>
           </Col>
+				
 
-          <Col md={6} sm={12}>
-            <Card style={{ width: '20rem' }} className="bg-black text-white">
+
+          <Col md={6} sm={12} className="d-flex justify-content-center mt-2" >
+            <Card style={{ width: '50rem' }} className="bg-black text-white">
               <Card.Body>
 								<Card.Title>Technical Skills:</Card.Title>
                 <Card.Text>
@@ -94,7 +96,7 @@ export default function About() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
+				</Row>
       </Container>
     </section>
   );
