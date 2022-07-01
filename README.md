@@ -16,13 +16,13 @@
 > This is a React.js application for my portfolio website. The purpose of this project is to create a simple SPAs (Single Page Applications) for my portfolio website. The application is built using React.js and it is hosted on my personal domain. The project follows an MVC architecture.
 
 ## Table of Contents
-- [Demo](#Demo)
-- [Installation](#Install)
-- [Usage](#Usage)
-- [Meet The Developer](#Meet)
-- [Contributing](#Contributing)
-- [Support](#Support)
-- [License](#License)
+- [Demo](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#demo-of-project)
+- [Installation](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#install)
+- [Usage](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#usage)
+- [Meet The Developer](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#meet-the-developer)
+- [Contributing](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#-contributing)
+- [Support](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#show-your-support)
+- [License](https://github.com/Brainybrian316/Portfolio/edit/main/README.md#-license)
 
 ***
 ## Demo of Project 
