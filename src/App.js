@@ -2,6 +2,7 @@ import About from  './components/About/about';
 import FeaturedProjects from './components/FeaturedProjects/featured';
 import Projects from './components/Projects/projects';
 import Blog from './components/Blog/blog';
+import Contact from './components/Contact/contact';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <FeaturedProjects/>
       <Projects/>
       <Blog/>
+      <Contact/>
     </div>
   );
 }
