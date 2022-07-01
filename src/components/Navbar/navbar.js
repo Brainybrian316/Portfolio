@@ -1,48 +1,37 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-export default function Navbar() {
+export default function navbar() {
   return (
-    <div>
+    <header className="sticky-top">
+      <Navbar expand="lg" style={{ background: '#1e06f4' }}>
+        <Container>
+          <Navbar.Brand href="/">
+            <i className="fa-solid fa-dragon"></i>
+            <i className="fa-solid fa-b"></i>
+            <i className="fa-solid fa-m"></i>
+          </Navbar.Brand>
 
-<header className="sticky-top">
-			<nav className="navbar navbar-expand-sm" style={{ background: "#1e06f4" }}>
-				<div className="container-fluid">
-					<a className="navbar-brand" href="/">
-						<i className="fa-solid fa-dragon"></i>
-						<i className="fa-solid fa-b"></i>
-						<i className="fa-solid fa-m"></i>
-					</a>
-          
-					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-
-					<div className="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-							<li className="nav-item">
-								<a className="nav-link" aria-current="page" href="#Home">HOME</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#About">ABOUT</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#Projects">PROJECTS</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#Blog">BLOG</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#Contact">CONTACT</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="https://docs.google.com/document/d/1PeP8jPx4ct_WFCPPNeYYgJaiSRx9p8il5QjwZ7s0wbQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-			</nav>
-		</header>
-
-    </div>
-  )
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/">HOME</Nav.Link>
+              <Nav.Link href="#About">ABOUT</Nav.Link>
+              <Nav.Link href="#Projects">PROJECTS</Nav.Link>
+              <Nav.Link href="#Blog">BLOG</Nav.Link>
+              <Nav.Link href="#Contact">CONTACT</Nav.Link>
+              <Nav.Link
+                href="https://docs.google.com/document/d/1PeP8jPx4ct_WFCPPNeYYgJaiSRx9p8il5QjwZ7s0wbQ/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RESUME
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 }
