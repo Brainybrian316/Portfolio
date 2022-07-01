@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function navbar() {
   return (
-    <header className="sticky-top">
-      <Navbar expand="lg" style={{ background: '#1e06f4' }}>
+    <>
+      <Navbar sticky="top" expand="lg" style={{ background: '#1e06f4' }} variant="dark">
         <Container fluid>
           <Navbar.Brand href="/">
             <i className="fa-solid fa-dragon"></i>
@@ -15,7 +15,7 @@ export default function navbar() {
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto nav-link">
               <Nav.Link href="/">HOME</Nav.Link>
               <Nav.Link href="#About">ABOUT</Nav.Link>
               <Nav.Link href="#Projects">PROJECTS</Nav.Link>
@@ -32,6 +32,6 @@ export default function navbar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </header>
+    </>
   );
 }
