@@ -1,11 +1,16 @@
+import { Container, Row, Col } from 'react-bootstrap';
+
 export default function featuredProjects() {
   return (
-    <div>
-      <div className="col-12 mt-5 pt-5">
-        <div className="text-center">
-          <h1 id="Projects">Projects</h1>
-        </div>
-      </div>
+		<div>
+		<Container>
+		<Row>
+			<Col className="mt-5 pt-5">
+				<h1 className="text-center">Projects</h1>
+				<hr />
+			</Col>
+		</Row>
+	</Container>
 
       <div className="container mt-3 pt-3">
         <div className="row">

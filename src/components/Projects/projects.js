@@ -1,6 +1,28 @@
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 export default function projects() {
+
+  const projects = [{
+    image: require('../../assets/images/Dev.png'),
+    title: 'DevCloud',
+    description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
+    languages: ['HTML', 'CSS', 'JavaScript'],
+    type: 'Front-End & Back-End',
+  }
+]
   return (
-    <div>
+    <section>
+
+    </section>
+  );
+}
+
+/* <div>
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-sm-12 mt-5">
@@ -346,5 +368,4 @@ export default function projects() {
         </div>
       </div>
     </div>
-  );
-}
+*/ 
