@@ -8,16 +8,16 @@ import ListGroup from 'react-bootstrap/ListGroup';
 export default function About() {
   return (
     <section id="About">
-      <Container>
+      <Container fluid>
         <Row>
           <Col className="mt-5 pt-5">
             <h1 className="text-center">About Me</h1>
             <hr />
           </Col>
         </Row>
-      </Container>
+      
 
-      <Container fluid>
+
 				<Row>
           <Col md={6} sm={12} className="d-flex justify-content-center">
             <Card style={{ width: '50rem' }} className="bg-black text-white ">
@@ -97,7 +97,8 @@ export default function About() {
             </Card>
           </Col>
 				</Row>
-      </Container>
+
+			</Container>
     </section>
   );
 }

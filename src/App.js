@@ -4,6 +4,7 @@ import Projects from './components/Projects/projects';
 import Blog from './components/Blog/blog';
 import Contact from './components/Contact/contact';
 import Navbar from './components/Navbar/navbar';
+import '../src/assets/css/style.css';
 
 
 function App() {
