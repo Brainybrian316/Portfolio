@@ -24,10 +24,10 @@ export default function featuredProjects() {
                 <ul class="list-group list-group-flush">
 									<li class="list-group-item bg-dark text-white">Handlebars, MVC-architecture, MySQL...</li>
 									<li class="list-group-item bg-dark text-white">Full-Stack</li>
-									<li class="list-group-item bg-dark text-white"><a href="https://github.com/Brainybrian316/Sweet-Nostalgia" target="_blank">GitHub</a></li>
+									<li class="list-group-item bg-dark text-white"><a href="https://github.com/Brainybrian316/Sweet-Nostalgia" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 								</ul>
 								<div class="p-3">
-									<a class="btn btn-primary float-end" href="https://sweet-nostalgia.herokuapp.com/" target="_blank" role="button">Visit Site</a>
+									<a class="btn btn-primary float-end" href="https://sweet-nostalgia.herokuapp.com/" target="_blank" rel="noopener noreferrer" role="button">Visit Site</a>
                 </div>
                 </div>
                 </div>

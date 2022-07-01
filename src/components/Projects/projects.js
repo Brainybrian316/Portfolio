@@ -21,7 +21,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">HTML, CSS, & JavaScript</li>
                 <li class="list-group-item bg-dark text-white">Front-End & Back-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/DevCloud" target="_blank">
+                  <a href="https://github.com/Brainybrian316/DevCloud" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -30,7 +30,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://brainybrian316.github.io/DevCloud/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Site
@@ -59,7 +59,7 @@ export default function projects() {
                 </li>
                 <li class="list-group-item bg-dark text-white">Front-End & Back-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Tech-Blog" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Tech-Blog" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -68,7 +68,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://brainybrian316-blog-site.herokuapp.com/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Site
@@ -97,7 +97,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">Node.js, inquirer, Jest</li>
                 <li class="list-group-item bg-dark text-white">Back-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Tech-Blog" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Tech-Blog" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -106,7 +106,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://user-images.githubusercontent.com/99369106/164992557-8eaf23b6-8282-4f3a-8e3e-711c9586f2de.mp4"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   View Demo
@@ -133,7 +133,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">HTML, CSS, Javascript</li>
                 <li class="list-group-item bg-dark text-white">Front-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Password-Generator" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Password-Generator" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -142,7 +142,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://brainybrian316.github.io/Password-Generator/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Site
@@ -172,7 +172,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">
                   <a
                     href="https://github.com/Brainybrian316/Professional-Readme-Generator"
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     GitHub
                   </a>
@@ -182,7 +182,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://drive.google.com/file/d/1ccKcpgQswggh2Rq0LavOuJjWCWZAamHb/view"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Demo
@@ -211,7 +211,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">Node.js, Inquirer, and MySQL</li>
                 <li class="list-group-item bg-dark text-white">Back-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Employee-Tracker" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Employee-Tracker" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -220,7 +220,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://user-images.githubusercontent.com/99369106/167320912-c0d48f05-ce94-4a8a-9c44-5e5dd851dfdf.mp4"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   View Demo
@@ -250,7 +250,7 @@ export default function projects() {
                 </li>
                 <li class="list-group-item bg-dark text-white">Front-End With API Request</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Workday-Scheduler" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Workday-Scheduler" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -259,7 +259,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://brainybrian316.github.io/Workday-Scheduler/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Site
@@ -287,7 +287,7 @@ export default function projects() {
                 <li class="list-group-item bg-dark text-white">HTML, CSS, Javascript</li>
                 <li class="list-group-item bg-dark text-white">Front-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/Code-Game" target="_blank">
+                  <a href="https://github.com/Brainybrian316/Code-Game" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -296,7 +296,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://brainybrian316.github.io/Code-Game/"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Site
@@ -326,7 +326,7 @@ export default function projects() {
                 </li>
                 <li class="list-group-item bg-dark text-white">Back-End</li>
                 <li class="list-group-item bg-dark text-white">
-                  <a href="https://github.com/Brainybrian316/E-commerce-Back-End" target="_blank">
+                  <a href="https://github.com/Brainybrian316/E-commerce-Back-End" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>
@@ -335,7 +335,7 @@ export default function projects() {
                 <a
                   class="btn btn-primary float-end"
                   href="https://user-images.githubusercontent.com/99369106/168486014-38a9bed0-3895-4878-ac5e-f79cf1449982.mp4"
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   role="button"
                 >
                   Visit Demo
