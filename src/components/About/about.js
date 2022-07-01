@@ -27,14 +27,14 @@ export default function About() {
                 alt="Brian"
                 className="rounded pb-3"
               />
-              <Card.Title>Brian Mojica</Card.Title>
+              <h1 className='text-info'>Brian Mojica</h1>
               <Card.Text>
                 <p>
                   Mission-driven full-stack Web Developer & Educator with a passion for thoughtful
                   UI, collaboration, and teaching. I am innovative problem-solver with a passion for developing apps. I am continuing my studies by expanding my knowledge in IOS development, more languages, libraries, and concepts. 
                 </p>
               </Card.Text>
-              <ListGroup className="list-group-flush">
+              <ListGroup className="list-group-flush rp">
                 <ListGroup.Item className="bg-black text-white">
                   Full-Stack Web Developer & Educator
                 </ListGroup.Item>
@@ -47,13 +47,13 @@ export default function About() {
                 </ListGroup.Item>
               </ListGroup>
               <Card.Body>
-                <Card.Link href="https://github.com/Brainybrian316">
+                <Card.Link href="https://github.com/Brainybrian316" className='fs-1'>
                   <i className="fa-brands fa-github-alt px-2 text-warning"></i>
                 </Card.Link>
-                <Card.Link href="https://www.linkedin.com/in/brian-mojica-63b638221">
+                <Card.Link href="https://www.linkedin.com/in/brian-mojica-63b638221" className='fs-1'>
                   <i className="fa-brands fa-linkedin px-2 text-warning"></i>
                 </Card.Link>
-                <Card.Link href="mailto:brainybrian316@gmail.com">
+                <Card.Link href="mailto:brainybrian316@gmail.com" className='fs-1'>
                   <i className="fa-solid fa-envelope px-2 text-warning"></i>
                 </Card.Link>
               </Card.Body>
@@ -65,7 +65,7 @@ export default function About() {
           <Col md={6} sm={12} className="d-flex justify-content-center mt-2" >
             <Card style={{ width: '50rem' }} className="bg-black text-white">
               <Card.Body>
-								<Card.Title>Technical Skills:</Card.Title>
+								<h1 className='text-info'>Technical Skills:</h1>
                 <Card.Text>
                   <p>
                   MERN Stack (MongoDB, Express.js, React.js, Node.js) jQuery,
