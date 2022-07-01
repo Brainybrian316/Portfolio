@@ -6,7 +6,7 @@ export default function navbar() {
   return (
     <header className="sticky-top">
       <Navbar expand="lg" style={{ background: '#1e06f4' }}>
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/">
             <i className="fa-solid fa-dragon"></i>
             <i className="fa-solid fa-b"></i>
