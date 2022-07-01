@@ -17,25 +17,23 @@ export default function About() {
         </Row>
       </Container>
 
-      <Container className="bg-black text-white rounded">
+      <Container className="bg-black text-white rounded p-0">
         <Row>
-          <Col lg={4} md={4} sm={12}>
+          <Col lg={4} md={6} sm={12}>
             <Image
               src={require('../../assets/images/Prof-pic.png')}
               alt="Brian"
               className="rounded img-fluid"
             />
-            <h1 className="text-info">Brian Mojica</h1>
           </Col>
-          <Col lg={4} md={4} sm={12}>
+          <Col lg={8} md={6} sm={12}>
+          <h1 className="text-info">Brian Mojica</h1>
             <p>
               Mission-driven full-stack Web Developer & Educator with a passion for thoughtful UI,
               collaboration, and teaching. I am innovative problem-solver with a passion for
               developing apps. I am continuing my studies by expanding my knowledge in IOS
               development, more languages, libraries, and concepts.
             </p>
-          </Col>
-          <Col lg={4} md={4} sm={12}>
             <ListGroup className="list-group-flush rp">
               <ListGroup.Item className="bg-black text-white">
                 Full-Stack Web Developer & Educator
