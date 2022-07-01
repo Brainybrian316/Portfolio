@@ -13,7 +13,7 @@ import React from 'react';
     image: require('../../assets/images/Dev.png'),
     title: 'DevCloud',
     description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
-    languages: ['HTML', 'CSS', 'JavaScript'],
+    languages: 'HTML, CSS, JavaScript',
     type: 'Front-End & Back-End',
     github: 'https://github.com/Brainybrian316/DevCloud',
     website: 'https://brainybrian316.github.io/DevCloud/',
@@ -27,33 +27,30 @@ import React from 'react';
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton
+        className='bg-dark text-white'>
           <Modal.Title id="contained-modal-title-vcenter">
             {projects[0].title}
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="bg-dark text-white">
           <p>
             {projects[0].description}
           </p>
           <ListGroup className="list-group-flush">
-            <ListGroup.Item>
-              {projects[0].languages.map((language, index) => {
-                return (
-                  <span key={index}>{language}</span>
-                )
-              })}
+            <ListGroup.Item className='bg-dark text-white'>
+              {projects[0].languages}
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className='bg-dark text-white' >
               {projects[0].type}
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className='bg-dark text-white'>
               <a href={projects[0].github}>GitHub</a>
             </ListGroup.Item>
           </ListGroup>
           </Modal.Body>
-          <Modal.Footer>
-          <Button variant="primary" href={projects[0].website}>Visit Site</Button>
+          <Modal.Footer className='bg-dark text-white'>
+          <Button variant="primary" href={projects[0].website}>View</Button>
             <Button onClick={props.onHide}>Close</Button>
           </Modal.Footer>
       </Modal>
@@ -66,7 +63,7 @@ import React from 'react';
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
+        <Image src={projects[0].image} fluid />
         </Button>
   
         <GalleryModal
