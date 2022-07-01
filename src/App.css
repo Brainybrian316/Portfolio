@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+root {
+    padding: 0;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-color: #b4b4b4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.highlight {
+    color: blue;
 }
 
-.App-link {
-  color: #61dafb;
+.hero {
+    height: 40vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#About,
+#Projects,
+#Blog,
+#Contact {
+    text-decoration: underline;
 }
+
+#no-image{
+    max-height: 10rem;
+}
+
+#btn-hero {
+    background-color: transparent;
+    border-radius: 45% 3px;
+    color: #b4b4b4;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #b4b4b4;
+    top: -10px;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.3s;
+}
+
+#btn-hero span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+#btn-hero span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+#btn-hero:hover,
+#btn-hero:focus {
+    background-color: grey;
+    color: blue;
+}
+
+#btn-hero:hover span {
+    padding-right: 25px;
+}
+
+#btn-hero:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.nav-link {
+    color: #d4d2d2;
+}
+
+
+#Name,
+#Email,
+#Message {
+    opacity: 70%;
+    background-color: rgb(59, 117, 241);
+    color: rgb(249, 248, 251);
+    font-weight: bold;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: rgb(241, 229, 229);
+    opacity: 1; /* Firefox */
