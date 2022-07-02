@@ -1,27 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f899d0aa.css",
-    "main.js": "/static/js/main.ca738e90.js",
+    "main.css": "/static/css/main.8c0fcf3b.css",
+    "main.js": "/static/js/main.2a0c1f3a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/sweet.png": "/static/media/sweet.c8d291028ff737d262d0.png",
     "static/media/Dev.png": "/static/media/Dev.429b5d402177eb26e196.png",
-    "static/media/Sweet-Nostalgia.png": "/static/media/Sweet-Nostalgia.05a35da598165dadc2ea.png",
-    "static/media/work.png": "/static/media/work.f583a4315ec0790acaff.png",
-    "static/media/tech.png": "/static/media/tech.f100b7cc08df19b1678f.png",
-    "static/media/code.png": "/static/media/code.841d143fe34e565679e4.png",
     "static/media/Prof-pic.png": "/static/media/Prof-pic.d7bcc52a7073ad9b472c.png",
     "static/media/Under-Construction.png.jpg": "/static/media/Under-Construction.png.73233cc5c251b3de4a29.jpg",
-    "static/media/quick_read_4.jpg": "/static/media/quick_read_4.fbb981066f70b782bdd3.jpg",
-    "static/media/Team-profile-generator-sample.png": "/static/media/Team-profile-generator-sample.23cac8057fa432b46992.png",
-    "static/media/quick_read_5.jpg": "/static/media/quick_read_5.7058257f2c357fa7388e.jpg",
-    "static/media/Password-generator.png": "/static/media/Password-generator.da0fb537b1de227d1319.png",
-    "static/media/trending_3.jpg": "/static/media/trending_3.ff72054bcedce6a3ea19.jpg",
     "index.html": "/index.html",
-    "main.f899d0aa.css.map": "/static/css/main.f899d0aa.css.map",
-    "main.ca738e90.js.map": "/static/js/main.ca738e90.js.map",
+    "main.8c0fcf3b.css.map": "/static/css/main.8c0fcf3b.css.map",
+    "main.2a0c1f3a.js.map": "/static/js/main.2a0c1f3a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f899d0aa.css",
-    "static/js/main.ca738e90.js"
+    "static/css/main.8c0fcf3b.css",
+    "static/js/main.2a0c1f3a.js"
   ]
 }
