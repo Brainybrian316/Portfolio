@@ -5,9 +5,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import '../src/assets/css/style.css';
-import { projectsList } from './utils/dbProjects';
 
-// in my projects component before the slash we can do projectlist = {projectslist}
 
 function App() {
 
@@ -16,7 +14,7 @@ function App() {
       <Navbar />
       <About/>
       <FeaturedProjects/>
-      <Projects projectsList={projectsList} />
+      <Projects />
       <Blog/>
       <Contact/>
     </body>
