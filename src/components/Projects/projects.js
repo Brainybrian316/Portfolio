@@ -63,7 +63,7 @@ import './projects.css';
   
     return (
       <>
-        <Container className="mt-3">
+        <Container className="mt-3" >
           <Row className="g-2">
             <Col lg={4} md={6} sm={12}>
             <div className="hovereffect">
@@ -76,7 +76,7 @@ import './projects.css';
             <span className="languages">{projects[0].languages}</span>
           </h2>
           
-          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          <Button className="info"  onClick={() => setModalShow(true)}>
           Learn More
         </Button>
         </div>
@@ -93,7 +93,7 @@ import './projects.css';
             <span className="languages">{projects[0].languages}</span>
           </h2>
           
-          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          <Button className="info" onClick={() => setModalShow(true)}>
           Learn More
         </Button>
         </div>
@@ -110,7 +110,7 @@ import './projects.css';
             <span className="languages">{projects[0].languages}</span>
           </h2>
           
-          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          <Button className="info" onClick={() => setModalShow(true)}>
           Learn More
         </Button>
         </div>
