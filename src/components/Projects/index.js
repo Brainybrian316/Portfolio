@@ -2,56 +2,59 @@ import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-boots
 import React, { useState } from 'react';
 import './gallery.css';
 import './filter.css';
+import GalleryModal from  '../Modal';
 
+//  container card gallery put inside its own component
+// inside here map through the projects array and display the cards
+//  project data inside utils folder 
 
-
-  const projects = [{
-    image: require('../../assets/images/Dev.png'),
-    title: 'DevCloud',
-    description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
-    languages: 'HTML, CSS, JavaScript',
-    type: 'Front-End & Back-End',
-    github: 'https://github.com/Brainybrian316/DevCloud',
-    website: 'https://brainybrian316.github.io/DevCloud/',
-  }
+const projects = [{
+  image: require('../../assets/images/Dev.png'),
+  title: 'DevCloud',
+  description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
+  languages: 'HTML, CSS, JavaScript',
+  type: 'Front-End & Back-End',
+  github: 'https://github.com/Brainybrian316/DevCloud',
+  website: 'https://brainybrian316.github.io/DevCloud/',
+}
 ]
 
-  function GalleryModal(props) {
-    return (
-      <Modal 
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered>
-        <Modal.Header closeButton
-        className='bg-dark text-white'>
-          <Modal.Title id="contained-modal-title-vcenter">
-            {projects[0].title}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="bg-dark text-white">
-          <p>
-            {projects[0].description}
-          </p>
-          <ListGroup className="list-group-flush">
-            <ListGroup.Item className='bg-dark text-white'>
-              {projects[0].languages}
-            </ListGroup.Item>
-            <ListGroup.Item className='bg-dark text-white' >
-              {projects[0].type}
-            </ListGroup.Item>
-            <ListGroup.Item className='bg-dark text-white'>
-              <a href={projects[0].github}>GitHub</a>
-            </ListGroup.Item>
-          </ListGroup>
-          </Modal.Body>
-          <Modal.Footer className='bg-dark text-white'>
-          <Button variant="primary" href={projects[0].website}>View</Button>
-            <Button onClick={props.onHide} variant="danger">Close</Button>
-          </Modal.Footer>
-      </Modal>
-    )
-  }
+  // function GalleryModal(props) {
+  //   return (
+  //     <Modal 
+  //     {...props}
+  //     size="lg"
+  //     aria-labelledby="contained-modal-title-vcenter"
+  //     centered>
+  //       <Modal.Header closeButton
+  //       className='bg-dark text-white'>
+  //         <Modal.Title id="contained-modal-title-vcenter">
+  //           {projects[0].title}
+  //         </Modal.Title>
+  //       </Modal.Header>
+  //       <Modal.Body className="bg-dark text-white">
+  //         <p>
+  //           {projects[0].description}
+  //         </p>
+  //         <ListGroup className="list-group-flush">
+  //           <ListGroup.Item className='bg-dark text-white'>
+  //             {projects[0].languages}
+  //           </ListGroup.Item>
+  //           <ListGroup.Item className='bg-dark text-white' >
+  //             {projects[0].type}
+  //           </ListGroup.Item>
+  //           <ListGroup.Item className='bg-dark text-white'>
+  //             <a href={projects[0].github}>GitHub</a>
+  //           </ListGroup.Item>
+  //         </ListGroup>
+  //         </Modal.Body>
+  //         <Modal.Footer className='bg-dark text-white'>
+  //         <Button variant="primary" href={projects[0].website}>View</Button>
+  //           <Button onClick={props.onHide} variant="danger">Close</Button>
+  //         </Modal.Footer>
+  //     </Modal>
+  //   )
+  // }
 
   export default function Projects() {
     const [modalShow, setModalShow] = useState(false);
@@ -86,40 +89,8 @@ import './filter.css';
         </div>
         </div>
             </Col>
-            <Col lg={4} md={6} sm={12}>
-            <div className="hovereffect">
-        <Image src={projects[0].image}
-        className='img-fluid'></Image>
-        <div className="overlay">
-          <h2>
-            {projects[0].title}
-            <br />
-            <span className="languages">{projects[0].languages}</span>
-          </h2>
+            
           
-          <Button className="info" onClick={() => setModalShow(true)}>
-          Learn More
-        </Button>
-        </div>
-        </div>
-            </Col>
-            <Col lg={4} md={6} sm={12}>
-            <div className="hovereffect">
-        <Image src={projects[0].image}
-        className='img-fluid'></Image>
-        <div className="overlay">
-          <h2>
-            {projects[0].title}
-            <br />
-            <span className="languages">{projects[0].languages}</span>
-          </h2>
-          
-          <Button className="info" onClick={() => setModalShow(true)}>
-          Learn More
-        </Button>
-        </div>
-        </div>
-            </Col>
           </Row>
         </Container>
   
