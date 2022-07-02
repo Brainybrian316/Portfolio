@@ -1,8 +1,10 @@
-import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
+import {Button, ListGroup } from 'react-bootstrap';
 import React from 'react';
+import Modal from 'react-bootstrap/Modal'
 
 function GalleryModal(props) {
   return (
+    <>
     <Modal 
     {...props}
     size="lg"
@@ -31,10 +33,11 @@ function GalleryModal(props) {
         </ListGroup>
         </Modal.Body>
         <Modal.Footer className='bg-dark text-white'>
-        <Button variant="primary" href=''>View</Button>
-          <Button onClick={props.onHide} variant="danger">Close</Button>
+        <Button variant="primary" href=''>View</Button> 
+          <Button  onClick={props.onHide} variant="danger">Close</Button>
         </Modal.Footer>
     </Modal>
+    </>
   )
 }
 
