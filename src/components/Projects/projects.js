@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
-import { Image } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import ListGroup from 'react-bootstrap/ListGroup';
 // import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import React from 'react';
@@ -63,8 +63,10 @@ import './projects.css';
   
     return (
       <>
-       
-        <div className="hovereffect">
+        <Container className="mt-3">
+          <Row className="g-2">
+            <Col lg={4} md={6} sm={12}>
+            <div className="hovereffect">
         <Image src={projects[0].image}
         className='img-fluid'></Image>
         <div className="overlay">
@@ -79,6 +81,44 @@ import './projects.css';
         </Button>
         </div>
         </div>
+            </Col>
+            <Col lg={4} md={6} sm={12}>
+            <div className="hovereffect">
+        <Image src={projects[0].image}
+        className='img-fluid'></Image>
+        <div className="overlay">
+          <h2>
+            {projects[0].title}
+            <br />
+            <span className="languages">{projects[0].languages}</span>
+          </h2>
+          
+          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          Learn More
+        </Button>
+        </div>
+        </div>
+            </Col>
+            <Col lg={4} md={6} sm={12}>
+            <div className="hovereffect">
+        <Image src={projects[0].image}
+        className='img-fluid'></Image>
+        <div className="overlay">
+          <h2>
+            {projects[0].title}
+            <br />
+            <span className="languages">{projects[0].languages}</span>
+          </h2>
+          
+          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          Learn More
+        </Button>
+        </div>
+        </div>
+            </Col>
+          </Row>
+        </Container>
+        
   
         {/* container */}
         {/* filtered list elements */}
