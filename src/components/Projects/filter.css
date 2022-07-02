@@ -1,0 +1,32 @@
+.filterGallery {
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+.filterBtn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color:blue;
+  border-radius: 10px;
+}
+
+.filterBtn:hover {
+  background-color: blue;
+  color: white;
+}
+
+.filterBtn.active {
+  background-color: #717171;
+  color: blue;
+}

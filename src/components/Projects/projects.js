@@ -1,25 +1,22 @@
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import ListGroup from 'react-bootstrap/ListGroup';
-// import ListGroupItem from 'react-bootstrap/ListGroupItem';
-import React from 'react';
-import './projects.css';
+import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
+import React, { useState } from 'react';
+import './gallery.css';
+import './filter.css';
+import './listProjects';
 
 
-  const projects = [{
-    image: require('../../assets/images/Dev.png'),
-    title: 'DevCloud',
-    description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
-    languages: 'HTML, CSS, JavaScript',
-    type: 'Front-End & Back-End',
-    github: 'https://github.com/Brainybrian316/DevCloud',
-    website: 'https://brainybrian316.github.io/DevCloud/',
-  }
-]
+
+
+//   const projects = [{
+//     image: require('../../assets/images/Dev.png'),
+//     title: 'DevCloud',
+//     description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
+//     languages: 'HTML, CSS, JavaScript',
+//     type: 'Front-End & Back-End',
+//     github: 'https://github.com/Brainybrian316/DevCloud',
+//     website: 'https://brainybrian316.github.io/DevCloud/',
+//   }
+// ]
 
   function GalleryModal(props) {
     return (
@@ -59,10 +56,23 @@ import './projects.css';
   }
 
   export default function Projects() {
-    const [modalShow, setModalShow] = React.useState(false);
+    const [modalShow, setModalShow] = useState(false);
+    const [listProjects, setListProjects] = useState(projects);
   
     return (
       <>
+        
+        <Container id="myBtnContainer" className="mt-3 text-center" fluid>
+          <button className="filterBtn active" onClick="filterSelection('all')">Show All</button>
+          <button className="filterBtn" onClick="filterSelection('react')">React.js</button>
+          <button className="filterBtn" onClick="filterSelection('javascript')">JavaScript</button>
+          <button className="filterBtn" onClick="filterSelection('frontend')">Front-End</button>
+          <button className="filterBtn" onClick="filterSelection('backend')">Back-End</button>
+          </Container>
+
+
+          <listProjects listProjects={listProjects}/>
+       
         <Container className="mt-3" >
           <Row className="g-2">
             <Col lg={4} md={6} sm={12}>
@@ -118,12 +128,6 @@ import './projects.css';
             </Col>
           </Row>
         </Container>
-        
-  
-        {/* container */}
-        {/* filtered list elements */}
-        {/* images */}
-        {/* animations */}
   
         <GalleryModal
           show={modalShow}
