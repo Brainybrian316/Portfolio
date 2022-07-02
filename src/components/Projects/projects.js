@@ -2,21 +2,19 @@ import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-boots
 import React, { useState } from 'react';
 import './gallery.css';
 import './filter.css';
-import './listProjects';
 
 
 
-
-//   const projects = [{
-//     image: require('../../assets/images/Dev.png'),
-//     title: 'DevCloud',
-//     description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
-//     languages: 'HTML, CSS, JavaScript',
-//     type: 'Front-End & Back-End',
-//     github: 'https://github.com/Brainybrian316/DevCloud',
-//     website: 'https://brainybrian316.github.io/DevCloud/',
-//   }
-// ]
+  const projects = [{
+    image: require('../../assets/images/Dev.png'),
+    title: 'DevCloud',
+    description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
+    languages: 'HTML, CSS, JavaScript',
+    type: 'Front-End & Back-End',
+    github: 'https://github.com/Brainybrian316/DevCloud',
+    website: 'https://brainybrian316.github.io/DevCloud/',
+  }
+]
 
   function GalleryModal(props) {
     return (
@@ -57,7 +55,6 @@ import './listProjects';
 
   export default function Projects() {
     const [modalShow, setModalShow] = useState(false);
-    const [listProjects, setListProjects] = useState(projects);
   
     return (
       <>
@@ -69,9 +66,6 @@ import './listProjects';
           <button className="filterBtn" onClick="filterSelection('frontend')">Front-End</button>
           <button className="filterBtn" onClick="filterSelection('backend')">Back-End</button>
           </Container>
-
-
-          <listProjects listProjects={listProjects}/>
        
         <Container className="mt-3" >
           <Row className="g-2">
