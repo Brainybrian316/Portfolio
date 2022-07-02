@@ -63,8 +63,14 @@ import React from 'react';
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-        <Image src={projects[0].image} fluid />
+          Launch vertically centered modal
         </Button>
+        <Image src={projects[0].image}
+        className='img-fluid'></Image>
+        {/* container */}
+        {/* filtered list elements */}
+        {/* images */}
+        {/* animations */}
   
         <GalleryModal
           show={modalShow}
