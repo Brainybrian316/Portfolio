@@ -7,6 +7,7 @@ import { Image } from 'react-bootstrap';
 import ListGroup from 'react-bootstrap/ListGroup';
 // import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import React from 'react';
+import './projects.css';
 
 
   const projects = [{
@@ -51,7 +52,7 @@ import React from 'react';
           </Modal.Body>
           <Modal.Footer className='bg-dark text-white'>
           <Button variant="primary" href={projects[0].website}>View</Button>
-            <Button onClick={props.onHide}>Close</Button>
+            <Button onClick={props.onHide} variant="danger">Close</Button>
           </Modal.Footer>
       </Modal>
     )
@@ -62,11 +63,23 @@ import React from 'react';
   
     return (
       <>
-        <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
-        </Button>
+       
+        <div className="hovereffect">
         <Image src={projects[0].image}
         className='img-fluid'></Image>
+        <div className="overlay">
+          <h2>
+            {projects[0].title}
+            <br />
+            <span className="languages">{projects[0].languages}</span>
+          </h2>
+          
+          <Button className="but" variant="danger" onClick={() => setModalShow(true)}>
+          Learn More
+        </Button>
+        </div>
+        </div>
+  
         {/* container */}
         {/* filtered list elements */}
         {/* images */}
