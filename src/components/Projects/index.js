@@ -2,7 +2,7 @@ import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-boots
 import React, { useState } from 'react';
 import './gallery.css';
 import './filter.css';
-import GalleryModal from  '../Modal';
+// import GalleryModal from  '../Modal';
 import { projectsList } from '../../utils/dbProjects';
 import ProjectCard from '../ProjectCard';
 
@@ -50,7 +50,7 @@ import ProjectCard from '../ProjectCard';
   // }
 
   export default function Projects() {
-    const [modalShow, setModalShow] = useState(false);
+    // const [modalShow, setModalShow] = useState(false);
   
     return (
       <>
@@ -64,14 +64,14 @@ import ProjectCard from '../ProjectCard';
           </Container>
 
           {projectsList.map(project => (
-             <ProjectCard setModalShow = {setModalShow} project = {project}  />
+             <ProjectCard project = {project}  />
           ))}
    
   
-        <GalleryModal
+        {/* <GalleryModal
           show={modalShow}
           onHide={() => setModalShow(false)}
-        />
+        /> */}
       </>
     );
   }

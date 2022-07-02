@@ -11,7 +11,7 @@ export const projectsList = [{
 },
 {
   image: require('../assets/images/sweet.png'),
-  title: 'DevCloud',
+  title: 'Sweet',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
   languages: 'HTML, CSS, JavaScript',
   type: 'Front-End & Back-End',
@@ -20,7 +20,7 @@ export const projectsList = [{
 },
 {
   image: require('../assets/images/Dev.png'),
-  title: 'DevCloud',
+  title: 'test',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
   languages: 'HTML, CSS, JavaScript',
   type: 'Front-End & Back-End',

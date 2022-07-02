@@ -1,13 +1,15 @@
 import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
-// import Modal from 'Modal';
+import GalleryModal from '../Modal';
+import React, { useState } from 'react';
 
 
 
 
-export default function ProjectCard({setModalShow, project})  {
-
+export default function ProjectCard({project})  {
+  const [modalShow, setModalShow] = useState(false);
 
   return (
+    <>
     <Container className="mt-3" >
     <Row className="g-2">
       <Col lg={4} md={6} sm={12}>
@@ -28,5 +30,12 @@ export default function ProjectCard({setModalShow, project})  {
       </Col>
     </Row>
   </Container>
+     
+  <GalleryModal
+          project = {project}
+          show={modalShow}
+          onHide={() => setModalShow(false)}
+        />
+  </>
   )
 }

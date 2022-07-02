@@ -1,5 +1,5 @@
 import {Button, Modal, Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
-import React, { useState } from 'react';
+import React from 'react';
 
 function GalleryModal(props) {
   return (
@@ -11,22 +11,22 @@ function GalleryModal(props) {
       <Modal.Header closeButton
       className='bg-dark text-white'>
         <Modal.Title id="contained-modal-title-vcenter">
-          {/* {projects[0].title} */} test
+          {props.project.title} 
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className="bg-dark text-white">
         <p>
-          {/* {projects[0].description} */} test
+          {props.project.description} 
         </p>
         <ListGroup className="list-group-flush">
           <ListGroup.Item className='bg-dark text-white'>
-            {/* {projects[0].languages} */} test
+            {props.project.languages} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white' >
-            {/* {projects[0].type} */} test
+            {props.project.type} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white'>
-            {/* <a href={projects[0].github}>GitHub</a> */} test
+            <a href={props.project.github}>GitHub</a> 
           </ListGroup.Item>
         </ListGroup>
         </Modal.Body>
