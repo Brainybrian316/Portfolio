@@ -1,4 +1,4 @@
-import { Container, Row, Image } from 'react-bootstrap';
+import { Container, Row, Image, Button } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import './filter.css';
 import { projectsList } from '../../utils/dbProjects';
@@ -26,20 +26,20 @@ export default function Projects() {
  
   return (
     <>
-      <Container id="myBtnContainer" className="mt-3 text-center" fluid>
-        <button type="button" data-filter="all">
+      <Container className="mt-3 text-center" fluid>
+        <button type="button" id="filterBtn" data-filter="all">
           Show all
         </button>
-        <button type="button" data-filter=".react">
+        <button type="button"  id="filterBtn" data-filter=".react">
           React
         </button>
-        <button type="button" data-filter=".frontend">
+        <button type="button" id="filterBtn" data-filter=".frontend">
           Front-End
         </button>
-        <button type="button" data-filter=".backend">
+        <button type="button" id="filterBtn" data-filter=".backend">
           Back-End
         </button>
-        <button type="button" data-filter=".javascript">
+        <button type="button" id="filterBtn" data-filter=".javascript">
           JavaScript
         </button>
       </Container>
