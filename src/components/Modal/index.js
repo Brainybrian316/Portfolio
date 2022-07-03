@@ -23,11 +23,9 @@ function GalleryModal(props) {
         </p>
         <ListGroup className="list-group-flush">
           <ListGroup.Item className='bg-dark text-white'>
-
             {props.project.languages} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white' >
-            <p></p>
             {props.project.type} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white'>
