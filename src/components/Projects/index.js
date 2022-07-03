@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import './filter.css';
 import { projectsList } from '../../utils/dbProjects';
 import ProjectCard from '../ProjectCard';
+import mixitup from 'mixitup';
+
 
 
 // add category to each dbobject 

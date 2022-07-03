@@ -20,7 +20,7 @@ export default function About() {
         <Row>
           <Col lg={4} md={6} sm={12}>
             <Image
-              src={require('../../assets/images/Prof-pic.png')}
+              src={require('../../assets/images/prof-b.jpeg')}
               alt="Brian"
               className="rounded img-fluid"
             />
