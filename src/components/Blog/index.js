@@ -13,7 +13,7 @@ export default function Blog() {
 			<div className="row justify-content-center">
 				<div className="d-flex justify-content-evenly col-lg-3 col-md-4 col-sm-12 mt-5">
 					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png.jpg")} alt="image1" className="rounded card-img-top"/>
+						<img src={require("../../assets/images/Under-Construction.png")} alt="image1" className="rounded card-img-top"/>
 						<div className="card-body">
 							<h5 className="card-title">Brian Mojica</h5>
 							<p className="card-text">
@@ -29,7 +29,7 @@ export default function Blog() {
 
 				<div className="d-flex justify-content-center col-lg-3 col-md-4 col-sm-12 mt-5">
 					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png.jpg")}  alt="image2" className="rounded card-img-top"/>
+						<img src={require("../../assets/images/Under-Construction.png")}  alt="image2" className="rounded card-img-top"/>
 						<div className="card-body">
 							<h5 className="card-title">Brian Mojica</h5>
 							<p className="card-text">
@@ -45,7 +45,7 @@ export default function Blog() {
 
 				<div className="d-flex justify-content-center col-lg-3 col-md-4 col-sm-12 mt-5">
 					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png.jpg")}  alt="image3" className="rounded card-img-top"/>
+						<img src={require("../../assets/images/Under-Construction.png")}  alt="image3" className="rounded card-img-top"/>
 						<div className="card-body">
 							<h5 className="card-title">Brian Mojica</h5>
 							<p className="card-text">
