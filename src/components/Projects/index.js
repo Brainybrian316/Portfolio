@@ -4,6 +4,7 @@ import './filter.css';
 import { projectsList } from '../../utils/dbProjects';
 import ProjectCard from '../ProjectCard';
 import mixitup from 'mixitup';
+import 'animate.css';
 
 // add category to each dbobject
 // filter selection function that will update the state
@@ -18,8 +19,14 @@ export default function Projects() {
       },
       load: {
         filter: '.mix'
-      }
-    });
+      },
+      animation: {
+        duration: 250,
+        nudge: false,
+        reverseOut: false,
+        effects: "fade rotateX(90deg) stagger(30ms)"
+    }
+  });
   })
 
 
