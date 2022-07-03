@@ -1,7 +1,7 @@
 
 
 export const projectsList = [{
-  // id: 1,
+  id: 1,
   image: require('../assets/images/Dev.png'),
   title: 'DevCloud',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
@@ -13,7 +13,7 @@ export const projectsList = [{
 
 },
 {
-  // id:2,
+  id:2,
   image: require('../assets/images/sweet.png'),
   title: 'Sweet',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
@@ -24,7 +24,7 @@ export const projectsList = [{
   category: "javascript"
 },
 {
-  // id: 3,
+  id: 3,
   image: require('../assets/images/Dev.png'),
   title: 'test',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',

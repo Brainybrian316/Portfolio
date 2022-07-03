@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../reset.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>MixItUp Demo - Basic</title>
+  </head>
+  <body>
+    <div class="controls">
+      <button type="button" class="control" data-filter="all">All</button>
+      <button type="button" class="control" data-filter=".green">Green</button>
+      <button type="button" class="control" data-filter=".blue">Blue</button>
+      <button type="button" class="control" data-filter=".pink">Pink</button>
+      <button type="button" class="control" data-filter="none">None</button>
+
+      <button type="button" class="control" data-sort="default:asc">Asc</button>
+      <button type="button" class="control" data-sort="default:desc">Desc</button>
+    </div>
+
+    <div class="container">
+      <div class="g-2 row">
+        <div data-order="1" class="mix green col-lg-4 col-md-6 col-sm-12">
+          <div class="hovereffect">
+            <img
+              src="/static/media/Dev.429b5d402177eb26e196.png"
+              alt="DevCloud"
+              class="image img-fluid"
+            />
+            <div class="overlay">
+              <h2 class="animated">
+                DevCloud<br /><span class="languages">HTML, CSS, JavaScript</span>
+              </h2>
+              <button type="button" class="info animated btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div data-order="1" class="mix blue javascript col-lg-4 col-md-6 col-sm-12">
+          <div class="hovereffect">
+            <img
+              src="/static/media/sweet.c8d291028ff737d262d0.png"
+              alt="Sweet"
+              class="image img-fluid"
+            />
+            <div class="overlay">
+              <h2 class="animated">
+                Sweet<br /><span class="languages">HTML, CSS, JavaScript</span>
+              </h2>
+              <button type="button" class="info animated btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div data-order="1" class="mix pink frontend col-lg-4 col-md-6 col-sm-12">
+          <div class="hovereffect">
+            <img
+              src="/static/media/Dev.429b5d402177eb26e196.png"
+              alt="test"
+              class="image img-fluid"
+            />
+            <div class="overlay">
+              <h2 class="animated">
+                test<br /><span class="languages">HTML, CSS, JavaScript</span>
+              </h2>
+              <button type="button" class="info animated btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mix green">A</div>
+      <div class="mix green">B</div>
+      <div class="mix blue">C</div>
+      <div class="mix pink">D</div>
+      <div class="mix green">E</div>
+      <div class="mix blue">F</div>
+      <div class="mix pink">G</div>
+      <div class="mix blue">H</div>
+
+      <div class="gap"></div>
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+
+    <!-- <script src="../mixitup.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"
+      integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var containerEl = document.querySelector('.container');
+
+      var mixer = mixitup(containerEl);
+    </script>
+  </body>
+</html>
