@@ -1,6 +1,7 @@
-import {Button, ListGroup } from 'react-bootstrap';
+import {Button, ListGroup, Overlay, OverlayTrigger } from 'react-bootstrap';
 import React from 'react';
 import Modal from 'react-bootstrap/Modal'
+
 
 function GalleryModal(props) {
   return (
