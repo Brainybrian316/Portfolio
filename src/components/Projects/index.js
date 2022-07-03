@@ -40,14 +40,14 @@ export default function Projects() {
         <button type="button"  id="filterBtn" data-filter=".react">
           React
         </button>
+        <button type="button" id="filterBtn" data-filter=".fullstack">
+          Full-Stack
+        </button>
+        <button type="button" id="filterBtn" data-filter=".node">
+          Node.js
+        </button>
         <button type="button" id="filterBtn" data-filter=".frontend">
           Front-End
-        </button>
-        <button type="button" id="filterBtn" data-filter=".backend">
-          Back-End
-        </button>
-        <button type="button" id="filterBtn" data-filter=".javascript">
-          JavaScript
         </button>
       </Container>
 

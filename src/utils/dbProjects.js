@@ -9,7 +9,7 @@ export const projectsList = [{
   type: 'Front-End & Back-End',
   github: 'https://github.com/Brainybrian316/DevCloud',
   website: 'https://brainybrian316.github.io/DevCloud/',
-  category: "mix frontend backend "
+  category: "mix fullstack frontend"
 
 },
 {
@@ -21,7 +21,7 @@ export const projectsList = [{
   type: 'Front-End & Back-End',
   github: 'https://github.com/Brainybrian316/Tech-Blog',
   website: 'https://brainybrian316-blog-site.herokuapp.com/',
-  category: "mix frontend backend"
+  category: "mix fullstack"
 },
 {
   id: 3,
@@ -32,7 +32,7 @@ export const projectsList = [{
   type: 'Back-End',
   github: 'https://github.com/Brainybrian316/Team-profile-generator',
   website: 'https://user-images.githubusercontent.com/99369106/164992557-8eaf23b6-8282-4f3a-8e3e-711c9586f2de.mp4',
-  category: "mix backend"
+  category: "mix node"
 },
 {
   id: 4,
@@ -54,7 +54,7 @@ export const projectsList = [{
   type: "Back-End",
   github:  "https://github.com/Brainybrian316/Professional-Readme-Generator",
   website: "https://drive.google.com/file/d/1ccKcpgQswggh2Rq0LavOuJjWCWZAamHb/view",
-  category: "mix backend"
+  category: "mix node"
 },
 {
   id: 6,
@@ -65,7 +65,7 @@ export const projectsList = [{
   type: "Back-End",
   github:  "https://github.com/Brainybrian316/Employee-Tracker",
   website: "https://user-images.githubusercontent.com/99369106/167320912-c0d48f05-ce94-4a8a-9c44-5e5dd851dfdf.mp4",
-  category: "mix backend"
+  category: "mix node fullstack"
 },
 {
   id: 7,
@@ -76,7 +76,7 @@ export const projectsList = [{
   type: "Front-End With API Request",
   github:  "https://github.com/Brainybrian316/Workday-Scheduler",
   website: "https://brainybrian316.github.io/Workday-Scheduler/",
-  category: "mix frontend"
+  category: "mix fullstack frontend"
 },
 {
   id: 8,
@@ -98,6 +98,6 @@ export const projectsList = [{
   type: "Back-End",
   github:  "https://github.com/Brainybrian316/E-commerce-Back-End",
   website: "https://user-images.githubusercontent.com/99369106/168486014-38a9bed0-3895-4878-ac5e-f79cf1449982.mp4",
-  category: "mix backend"
+  category: "mix node"
 },
 ]
