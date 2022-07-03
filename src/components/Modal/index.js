@@ -23,18 +23,21 @@ function GalleryModal(props) {
         </p>
         <ListGroup className="list-group-flush">
           <ListGroup.Item className='bg-dark text-white'>
+
             {props.project.languages} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white' >
+            <p></p>
             {props.project.type} 
           </ListGroup.Item>
           <ListGroup.Item className='bg-dark text-white'>
-            <a href={props.project.github}>GitHub</a> 
+            <a href={props.project.github} target="_blank" rel="noopener noreferrer"
+                  role="button">GitHub</a> 
           </ListGroup.Item>
         </ListGroup>
         </Modal.Body>
         <Modal.Footer className='bg-dark text-white'>
-        <Button variant="primary" href=''>View</Button> 
+        <a role="button" href={props.project.website}  target="_blank" rel="noopener noreferrer" className="btn btn-primary">View</a> 
           <Button  onClick={props.onHide} variant="danger">Close</Button>
         </Modal.Footer>
     </Modal>
