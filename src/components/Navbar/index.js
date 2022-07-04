@@ -7,7 +7,7 @@ export default function navbar() {
     <>
       <Navbar sticky="top" expand="lg" style={{ background: '#1e06f4' }} variant="dark">
         <Container fluid>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" id="fancy-text-nav">
             <i className="fa-solid fa-dragon"></i>
             <i className="fa-solid fa-b"></i>
             <i className="fa-solid fa-m"></i>

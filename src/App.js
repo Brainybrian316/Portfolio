@@ -17,7 +17,8 @@ function App() {
       <FeaturedProjects/>
       <Projects />
       <Blog/>
-      <div className='bg-dark mt-5'>
+      
+      <div className='mt-5' id="gradient">
       <Contact/>
       <Footer/>
       </div>

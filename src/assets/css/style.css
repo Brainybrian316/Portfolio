@@ -91,3 +91,75 @@ textarea.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
   opacity: 1; /* Firefox */
 }
+
+#gradient {
+  border-radius: 10px;
+  animation: myMove 5s linear infinite;
+}
+@keyframes myMove {
+ 0% {
+    background: rgb(0, 0, 0);
+  }
+  25% {
+    background: rgb(30, 30, 30);
+  }
+  50% {
+    background: rgb(0, 0, 60);
+  }
+  75% {
+    background: rgb(0, 0, 90);
+  }
+  100% {
+    background: rgb(0, 0, 30);
+  }
+}
+
+#fancy-text {
+  font-family:arial black;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 1000s linear infinite;
+}
+
+  #fancy-text-nav {
+    font-family:arial black;
+    background-image: 
+      linear-gradient(to right, grey, white,silver, black); 
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: move 10000s linear infinite;
+  }
+  @keyframes move {
+    to {
+      background-position: 4500vh;
+    }
+    }
+
+
+    .curveArea {
+      width: 500px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    
+    .mainBox {
+      height: 100%;
+      background: #fff;
+      overflow: hidden;
+    }
+    
+    .curveSection {
+      width: 200%;
+      height: 100%;
+      border-radius: 50%;
+      background: #e44627;
+      top: 25%;
+      left: -50%;
+      right: 0;
+      position: relative;
+      border-top: 10px solid #fdedea;
+    }
