@@ -20,7 +20,7 @@ function App() {
       <Blog/>
 
       
-      <Container id="thing" fluid >
+      <Container id="curve" fluid >
       <Contact/>
       <Footer/>
       </Container>

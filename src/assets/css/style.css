@@ -139,12 +139,37 @@ textarea.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     }
     }
 
-    #thing {
+    /* #curve {
       padding: 200px 20px 10px 20px;
       background-image: radial-gradient(ellipse 100% 200% at 50% 200%, rgb(0, 0, 0) 90%, #0000 90%),
-          radial-gradient(ellipse 100% 200% at 50% 190%, rgb(92, 92, 92) 90%, #0000 90%);
-
+          radial-gradient(ellipse 100% 200% at 50% 197%, rgb(92, 92, 92) 90%, #0000 90%);
       font-family: sans-serif;
       text-transform: uppercase;
+      border-;
+  } */
+
+  #curve {
+    margin-top: 200px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), radial-gradient(circle at top, rgb(19, 12, 240),#000000);
+    border-top: double 20px transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* border-top: #8c5555 solid 30px; */
+    animation: curve 100s infinite linear;
+  }
+
+    /*  width: 300px;
+    height: 80px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box; */
+  @keyframes curve  {
+    to {
+      background-position: 4500vh;
+    }
   }
 
