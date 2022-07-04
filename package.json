@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@popmotion/popcorn": "^0.4.4",
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.0-beta1",
+    "dotenv": "^16.0.1",
     "framer-motion": "^6.3.16",
     "gh-pages": "^4.0.0",
     "mixitup": "^3.3.1",
