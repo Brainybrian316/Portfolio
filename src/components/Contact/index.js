@@ -2,6 +2,8 @@ import { useState, useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 
+
+
 const Result = () => {
 	return(
 		<p>Your message has been successfully sent. I will contact you soon.</p>
@@ -17,7 +19,7 @@ export default function Contact(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('portfolio-contact', 'template_meymdpm', e.target, '9D0f7rikY489nEQZS')
+    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, e.target, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
