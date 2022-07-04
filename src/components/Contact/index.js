@@ -36,19 +36,16 @@ export default function Contact(props) {
   }, 5000);
 
   return (
-    <div>
-      <Container>
-        <Row>
-          <Col className="mt-5 pt-5">
-            <h1 className="text-center">Contact</h1>
+    <>
+
+      <Container className='text-center text-white'>
+            <h1>Contact</h1>
             <hr />
-          </Col>
-        </Row>
       </Container>
 
-      <div className="container mb-5">
-        <div className="row d-flex justify-content-center text-black">
-          <div className="col-lg-6 col-md-12 col-sm-12">
+			
+			<Container >	
+				<Row className="mt-5 text-white">
             <form className="contact-form" action="" onSubmit={sendEmail}>
               <label for="Name" className="form-label">
                 Name:
@@ -91,9 +88,9 @@ export default function Contact(props) {
                 Submit
               </button>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
+				</Row>
+			</Container>
+
+    </>
   );
 }

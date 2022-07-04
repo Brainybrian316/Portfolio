@@ -17,8 +17,10 @@ function App() {
       <FeaturedProjects/>
       <Projects />
       <Blog/>
+      <div className='bg-dark mt-5'>
       <Contact/>
       <Footer/>
+      </div>
 
     </body>
   );
