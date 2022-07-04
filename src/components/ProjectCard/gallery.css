@@ -35,7 +35,7 @@ height: inherit;
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
   animation:bounceInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s; /* don't forget to set a duration! */
+  animation-duration: .75s; /* don't forget to set a duration! */
  }
 
 

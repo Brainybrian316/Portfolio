@@ -1,5 +1,10 @@
+import { dbBlogsList } from "../../utils/dbBlogs"
+import { Container, Row, Col } from "react-bootstrap"
+// import { motion, AnimatePresence } from "framer-motion"
 
-export default function Blog() {
+
+export default function Blog({ isVisible }) {
+	
   return (
     <div>
 
@@ -8,59 +13,34 @@ export default function Blog() {
 				<h1 id="Blog">Blog</h1>
 			</div>
 		</div>
+		{/* <AnimatePresence>
+    {isVisible && (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      />
+    )}
+  </AnimatePresence> */}
 
-    <div className="container">
-			<div className="row justify-content-center">
-				<div className="d-flex justify-content-evenly col-lg-3 col-md-4 col-sm-12 mt-5">
-					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png")} alt="image1" className="rounded card-img-top"/>
-						<div className="card-body">
-							<h5 className="card-title">Brian Mojica</h5>
-							<p className="card-text">
-								I have a passion for creating beautiful, functional, and
-								intuitive user experiences. I'm currently looking for an entry level position.
-							</p>
+		<Container>
+			<Row>
+				{dbBlogsList.map((blog) => 
+					<Col key={blog.id} md={4} sm={12} className="g-2">
+						<div className="card">
+							<img className="card-img-top" src={blog.image} alt="Card image cap" />
+							<div className="card-body">
+								<h5 className="card-title">{blog.title}</h5>
+								<p className="card-text">{blog.description}</p>
+								<a href={blog.link} className="btn btn-primary">Read More</a>
+							</div>
 						</div>
-						<div className="p-3">
-							<a className="btn btn-secondary" href="home" role="button">Read Blog</a>
-						</div>
-					</div>
-				</div>
+					</Col>
+				)}
+			</Row>
+		</Container>
 
-				<div className="d-flex justify-content-center col-lg-3 col-md-4 col-sm-12 mt-5">
-					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png")}  alt="image2" className="rounded card-img-top"/>
-						<div className="card-body">
-							<h5 className="card-title">Brian Mojica</h5>
-							<p className="card-text">
-								I have a passion for creating beautiful, functional, and
-								intuitive user experiences. I'm currently looking for an entry level position.
-							</p>
-						</div>
-						<div className="p-3">
-							<a className="btn btn-secondary" href="home" role="button">Read Blog</a>
-						</div>
-					</div>
-				</div>
 
-				<div className="d-flex justify-content-center col-lg-3 col-md-4 col-sm-12 mt-5">
-					<div className="card border-dark text-bg-dark">
-						<img src={require("../../assets/images/Under-Construction.png")}  alt="image3" className="rounded card-img-top"/>
-						<div className="card-body">
-							<h5 className="card-title">Brian Mojica</h5>
-							<p className="card-text">
-								I have a passion for creating beautiful, functional, and
-								intuitive user experiences. I'm currently looking for an entry level position.
-							</p>
-						</div>
-						<div className="p-3">
-							<a className="btn btn-secondary" href="home" role="button">Read Blog</a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
 
     </div>
   )

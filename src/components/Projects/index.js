@@ -10,7 +10,7 @@ import 'animate.css';
 // filter selection function that will update the state
 
 export default function Projects() {
-  const [filteredProjects, setFilteredProjects] = useState(projectsList);
+  // const [filteredProjects, setFilteredProjects] = useState(projectsList);
 
   useEffect(() => {
      mixitup('.g-2', {
@@ -53,7 +53,7 @@ export default function Projects() {
 
       <Container className="mt-3">
         <Row className="g-2">
-          {filteredProjects.map((project) => (
+          {projectsList.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </Row>
