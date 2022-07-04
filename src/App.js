@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import '../src/assets/css/style.css';
 
 
@@ -17,6 +18,8 @@ function App() {
       <Projects />
       <Blog/>
       <Contact/>
+      <Footer/>
+
     </body>
   );
 }

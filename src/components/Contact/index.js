@@ -1,37 +1,39 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 
-
-
 const Result = () => {
-	return(
-		<p>Your message has been successfully sent. I will contact you soon.</p>
-	)
-}
+  return <p>Your message has been successfully sent. I will contact you soon.</p>;
+};
 
 export default function Contact(props) {
+  const [result, showResult] = useState(false);
 
-
-	const [result, showResult] = useState(false);
-
-	
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, e.target, process.env.REACT_APP_YOUR_PUBLIC_KEY)
-      .then((result) => {
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_YOUR_PUBLIC_KEY,
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-			e.target.reset();
-			showResult(true);
+        },
+      );
+    e.target.reset();
+    showResult(true);
   };
 
-	setTimeout(() => {
-		showResult(false); },
-		 5000);
+  setTimeout(() => {
+    showResult(false);
+  }, 5000);
 
   return (
     <div>
@@ -45,10 +47,10 @@ export default function Contact(props) {
       </Container>
 
       <div className="container mb-5">
-        <div className="row d-flex justify-content-center text-white">
+        <div className="row d-flex justify-content-center text-black">
           <div className="col-lg-6 col-md-12 col-sm-12">
-            <form className="contact-form"  action="" onSubmit={sendEmail}>
-              <label for="Name" className="form-label text-black">
+            <form className="contact-form" action="" onSubmit={sendEmail}>
+              <label for="Name" className="form-label">
                 Name:
               </label>
               <input
@@ -60,7 +62,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Email" className="form-label text-black">
+              <label for="Email" className="form-label">
                 Email:
               </label>
               <input
@@ -72,7 +74,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Message" className="form-label text-black">
+              <label for="Message" className="form-label">
                 Message:
               </label>
               <textarea
@@ -83,7 +85,7 @@ export default function Contact(props) {
                 placeholder="Enter your message"
                 required
               ></textarea>
-									<div className="text-primary fs-4 fw-bold">{result ? <Result/> : null}</div>
+              <div className="text-primary fs-4 fw-bold">{result ? <Result /> : null}</div>
 
               <button type="submit" className="btn btn-primary mt-3" value="Send">
                 Submit
@@ -95,6 +97,3 @@ export default function Contact(props) {
     </div>
   );
 }
-
-// process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY
-
