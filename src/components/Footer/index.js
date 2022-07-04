@@ -10,7 +10,7 @@ export default function Footer() {
             &ensp; Made with love by Brian Mojica.
           </div>
           <div className="col-md-12 text-center">
-          <p>&copy; 2020 All rights reserved.</p>
+          <p>&copy; 2022 All rights reserved.</p>
           </div>
         </div>
       </div>

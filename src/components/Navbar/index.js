@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function navbar() {
   return (
     <>
-      <Navbar sticky="top" expand="lg" style={{ background: '#1e06f4' }} variant="dark">
+      <Navbar sticky="top" expand="lg" style={{ background: 'black' }} variant="dark" >
         <Container fluid>
           <Navbar.Brand href="/" id="fancy-text-nav">
             <i className="fa-solid fa-dragon"></i>
@@ -17,7 +17,7 @@ export default function navbar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto nav-link">
               <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="#About">ABOUT</Nav.Link>
+              <Nav.Link href="#About" class>ABOUT</Nav.Link>
               <Nav.Link href="#Projects">PROJECTS</Nav.Link>
               <Nav.Link href="#Blog">BLOG</Nav.Link>
               <Nav.Link href="#Contact">CONTACT</Nav.Link>
