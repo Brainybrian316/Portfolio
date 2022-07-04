@@ -19,7 +19,7 @@ export default function featuredProjects() {
               <img
                 src={require('../../assets/images/sweet.png')}
                 alt="Sweet-Nostalgia"
-                className="card-img-top"
+                className="card-img-top img-fluid"
               />
               <div className="card-body">
                 <h5 className="card-title">Sweet Nostalgia (Featured)</h5>

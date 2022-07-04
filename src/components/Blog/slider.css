@@ -11,3 +11,19 @@
   background-color: rgba(0, 0, 0, 0.639);
   color: rgb(255, 255, 255);
 }
+
+.prev,
+.next  {
+  width: 100px;
+  height: 75px;
+  border-radius: 50%;
+  color: rgb(0, 59, 255);  
+  
+
+}
+
+.prev:active,
+.next:active {
+  background-color: rgb(76, 81, 98);
+}
+
