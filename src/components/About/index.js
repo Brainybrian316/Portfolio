@@ -7,14 +7,14 @@ import Image from 'react-bootstrap/Image';
 export default function About() {
   return (
     <section id="About">
-      <Container fluid>
-        <Row>
-          <Col className="mt-5 pt-5">
-            <h1 className="text-center">About Me</h1>
-            <hr />
-          </Col>
-        </Row>
-      </Container>
+      <Container>
+		<Row>
+			<Col className="mt-5 pt-5">
+				<h1 className="text-center">About Me</h1>
+				<hr />
+			</Col>
+		</Row>
+	</Container>
 
       <Container className="bg-black text-white rounded p-0">
         <Row>
