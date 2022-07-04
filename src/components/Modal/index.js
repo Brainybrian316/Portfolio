@@ -11,7 +11,7 @@ function GalleryModal(props) {
     size="lg"
     aria-labelledby="contained-modal-title-vcenter"
     centered>
-      <Modal.Header closeButton
+      <Modal.Header closeButton closeVariant='white'
       className='bg-dark text-white'>
         <Modal.Title id="contained-modal-title-vcenter">
           {props.project.title} 
@@ -36,7 +36,7 @@ function GalleryModal(props) {
         </Modal.Body>
         <Modal.Footer className='bg-dark text-white'>
         <a role="button" href={props.project.website}  target="_blank" rel="noopener noreferrer" className="btn btn-primary">View</a> 
-          <Button  onClick={props.onHide} variant="danger">Close</Button>
+          <Button onClick={props.onHide} variant="danger">Close</Button>
         </Modal.Footer>
     </Modal>
     </>
