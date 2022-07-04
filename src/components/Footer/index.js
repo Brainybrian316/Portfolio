@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="footer text-white">
       <div className="container">
         <div className="row">
-          <div className="col-md-12 text-center" id="fancy-text">
+          <div className="col-md-12 pt-3 text-center" id="fancy-text">
             <i className="fa-solid fa-dragon"></i>
             <i className="fa-solid fa-b"></i>
             <i className="fa-solid fa-m"></i>

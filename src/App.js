@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import '../src/assets/css/style.css';
+import Container from 'react-bootstrap/Container';
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
       <FeaturedProjects/>
       <Projects />
       <Blog/>
+
       
-      <div className='mt-5' id="gradient">
+      <Container id="thing" fluid >
       <Contact/>
       <Footer/>
-      </div>
+      </Container>
 
     </body>
   );

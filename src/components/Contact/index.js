@@ -38,9 +38,8 @@ export default function Contact(props) {
   return (
     <>
 
-      <Container className='text-center text-white'>
+      <Container className='text-center text-white pb-5'>
             <h1>Contact</h1>
-            <hr />
       </Container>
 
 			

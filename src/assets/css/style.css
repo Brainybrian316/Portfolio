@@ -139,27 +139,12 @@ textarea.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     }
     }
 
+    #thing {
+      padding: 200px 20px 10px 20px;
+      background-image: radial-gradient(ellipse 100% 200% at 50% 200%, rgb(0, 0, 0) 90%, #0000 90%),
+          radial-gradient(ellipse 100% 200% at 50% 190%, rgb(92, 92, 92) 90%, #0000 90%);
 
-    .curveArea {
-      width: 500px;
-      height: 200px;
-      margin: 0 auto;
-    }
-    
-    .mainBox {
-      height: 100%;
-      background: #fff;
-      overflow: hidden;
-    }
-    
-    .curveSection {
-      width: 200%;
-      height: 100%;
-      border-radius: 50%;
-      background: #e44627;
-      top: 25%;
-      left: -50%;
-      right: 0;
-      position: relative;
-      border-top: 10px solid #fdedea;
-    }
+      font-family: sans-serif;
+      text-transform: uppercase;
+  }
+
