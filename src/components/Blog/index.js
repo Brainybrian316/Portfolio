@@ -30,9 +30,8 @@ export default function Blog() {
 			</Col>
 		</Row>
 	</Container>
-
 		<Container >
-		<Carousel>
+		<Carousel fade>
 			{dbBlogsList.map((blog, index) => (
 				<Carousel.Item key={index} interval={10000}>
 					<Image src={blog.image} alt={blog.title} className="slider-image"/>

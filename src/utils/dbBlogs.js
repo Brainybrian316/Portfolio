@@ -10,15 +10,15 @@ export const dbBlogsList =  [
   {
     id: 2,
     image: require('../assets/images/Under-Construction.png'),
-    title: "My bootcamp experience",
-    description: "I have a passion for creating beautiful, functional, and intuitive user experiences. I'm currently looking for an entry level position.",
+    title: "My boot camp experience",
+    description: "I enjoyed my boot camp experience.",
     link: "home"
   },
   {
     id: 3,
     image: require('../assets/images/Under-Construction.png'),
     title: "Why I left teaching",
-    description: "I have a passion for creating beautiful, functional, and intuitive user experiences. I'm currently looking for an entry level position.",
+    description: "I can write a book on this stuff.",
     link: "home"
   }
 ]
