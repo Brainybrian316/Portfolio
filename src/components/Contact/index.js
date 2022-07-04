@@ -48,7 +48,7 @@ export default function Contact(props) {
         <div className="row d-flex justify-content-center text-white">
           <div className="col-lg-6 col-md-12 col-sm-12">
             <form className="contact-form"  action="" onSubmit={sendEmail}>
-              <label for="Name" className="form-label">
+              <label for="Name" className="form-label text-black">
                 Name:
               </label>
               <input
@@ -60,7 +60,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Email" className="form-label">
+              <label for="Email" className="form-label text-black">
                 Email:
               </label>
               <input
@@ -72,7 +72,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Message" className="form-label">
+              <label for="Message" className="form-label text-black">
                 Message:
               </label>
               <textarea
@@ -83,11 +83,11 @@ export default function Contact(props) {
                 placeholder="Enter your message"
                 required
               ></textarea>
+									<div className="text-primary fs-4 fw-bold">{result ? <Result/> : null}</div>
 
               <button type="submit" className="btn btn-primary mt-3" value="Send">
                 Submit
               </button>
-							<div>{result ? <Result/> : null}</div>
             </form>
           </div>
         </div>
