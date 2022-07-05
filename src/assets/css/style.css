@@ -21,19 +21,13 @@ body {
 }
 
 .hero {
-  height: 40vh;
+  height: 50vh;
+  max-width: 100%;
 }
 
 
 #no-image{
   max-height: 10rem;
-}
-
-#btn-hero {
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
 }
 
 

@@ -1,8 +1,8 @@
 import Spline from '@splinetool/react-spline';
 import styled from 'styled-components';
-import Container from 'react-bootstrap/Container';
+import {Container, Image } from 'react-bootstrap';
 import './hero.css';
-import HALO from 'vanta/dist/vanta.clouds.min';
+import Clouds from 'vanta/dist/vanta.clouds.min';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Hero(props) {
@@ -11,7 +11,7 @@ export default function Hero(props) {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        HALO({
+        Clouds({
           el: myRef.current,
           mouseControls: true,
           touchControls: true,
@@ -35,23 +35,22 @@ export default function Hero(props) {
   return (
     <>
       <div id="vanta-canvas" ref={myRef}>
-        <div class="container hero" id="Home">
-          <div class="row">
-            <div class="col-md-12 mt-4 pt-4 fs-1">
-              <div class="text-center text-light" id="hero-text">
+        <div className="container hero" id="Home">
+          <div className="row">
+            <div className="col-12 mt-4 pt-4 fs-1">
+              <div className="text-center text-light" id="hero-text">
                 <p>
                   Hello, I'm&nbsp;&nbsp;
                   <span id="fancy-text-hero">Brian Mojica</span>
                   <br />
                   I'm a Full-Stack Web Developer.
                 </p>
-                <div>
-                  <a type="disabled" id="btn-hero">
-                    <span><Spline scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" />
-</span>
-                  </a>
-            
-                </div>
+                  <div className="wrapper">
+                    <Image 
+                  src={require('../../assets/images/me.png')}
+                  fluid />
+                  </div>
+             
               </div>
             </div>
           </div>
