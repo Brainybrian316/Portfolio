@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import '../src/assets/css/style.css';
 import Container from 'react-bootstrap/Container';
+import Hero from './components/Hero';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <body>
       <Navbar />
+      <Hero/>
       <About/>
       <FeaturedProjects/>
       <Projects />
