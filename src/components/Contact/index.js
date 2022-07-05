@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
+import './contact.css';
 
 const Result = () => {
   return <p>Your message has been successfully sent. I will contact you soon.</p>;

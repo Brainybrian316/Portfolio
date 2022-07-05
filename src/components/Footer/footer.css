@@ -1,0 +1,9 @@
+#fancy-text {
+  font-family:arial black;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 500s linear infinite;
+}

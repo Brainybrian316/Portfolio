@@ -1,0 +1,14 @@
+#fancy-text-nav {
+  font-family:arial black;
+  background-image: 
+    linear-gradient(to right, grey, white,silver, black); 
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 10000s linear infinite;
+}
+@keyframes move {
+  to {
+    background-position: 4500vh;
+  }
+  }
