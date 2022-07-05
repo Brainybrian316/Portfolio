@@ -110,5 +110,16 @@ textarea.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   } 
 
 
-
-
+  #fancy-text-hero {
+    background-image: 
+      linear-gradient(to right, rgb(0, 21, 255), rgb(192, 133, 133),silver, rgb(0, 37, 222)); 
+      background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: move 2000s linear infinite;
+  }
+  @keyframes move {
+    to {
+      background-position: 4500vh;
+    }
+    }

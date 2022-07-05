@@ -2,7 +2,7 @@ import Spline from '@splinetool/react-spline';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import './hero.css';
-import HALO from 'vanta/dist/vanta.halo.min';
+import HALO from 'vanta/dist/vanta.clouds.min';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Hero(props) {
@@ -16,14 +16,14 @@ export default function Hero(props) {
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          baseColor: 0x0,
-          backgroundColor: 0xf0f11,
-          amplitudeFactor: 1.1,
-          xOffset: 0.33,
-          yOffset: 0.00,
-          size: 2.00
+          minHeight: 200.00,
+          minWidth: 200.00,
+          skyColor: 0x50505,
+          cloudColor: 0x2a2a3e,
+          cloudShadowColor: 0x4671d2,
+          sunColor: 0xffffff,
+          sunGlareColor: 0xfa,
+          sunlightColor: 0x13ff
         }),
       );
     }
@@ -41,7 +41,7 @@ export default function Hero(props) {
               <div class="text-center text-light" id="hero-text">
                 <p>
                   Hello, I'm&nbsp;&nbsp;
-                  <span class="highlight">Brian Mojica</span>
+                  <span id="fancy-text-hero">Brian Mojica</span>
                   <br />
                   I'm a Full-Stack Web Developer.
                 </p>
