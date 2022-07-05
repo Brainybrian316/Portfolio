@@ -23,11 +23,11 @@ export default function Blog() {
         </Row>
       </Container>
       <Container>
-        <Carousel fade prevIcon={faArrowLeftIcon} nextIcon={faArrowRightIcon} >
+        <Carousel fade prevIcon={faArrowLeftIcon} nextIcon={faArrowRightIcon}>
           {dbBlogsList.map((blog, index) => (
             <Carousel.Item key={index} interval={10000}>
-              <Image src={blog.image} alt={blog.title} className="slider-image" />
-              <Carousel.Caption bsPrefix="carousel-caption">
+              <Image src={blog.image} alt={blog.title} rounded fluid/>
+              <Carousel.Caption >
                 <h3>{blog.title}</h3>
                 <p>{blog.description}</p>
                 <a
