@@ -24,7 +24,8 @@ export default function About() {
             <Image
               src={require('../../assets/images/prof-b.jpeg')}
               alt="Brian"
-              className="rounded img-fluid"
+              className="rounded"
+              fluid
             />
           </Col>
           <Col lg={8} md={6} sm={12}>

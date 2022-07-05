@@ -2,7 +2,7 @@
 
 export const projectsList = [{
   id: 1,
-  image: require('../assets/images/Dev2.png'),
+  image: require('../assets/images/dev.png'),
   title: 'DevCloud',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
   languages: 'HTML, CSS, JavaScript',
