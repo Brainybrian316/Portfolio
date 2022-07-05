@@ -48,7 +48,7 @@ export default function Hero(props) {
                   <a href="#Projects" class="btn btn-primary" id="btn-hero">
                     <span>View My Work</span>
                   </a>
-                  <Spline scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" />
+                  <Spline className="spline" scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" />
                 </div>
               </div>
             </div>
