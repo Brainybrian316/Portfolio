@@ -47,7 +47,8 @@ export default function Hero(props) {
                 </p>
                 <div>
                   <a type="disabled" id="btn-hero">
-                    <span>   <Spline scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" /></span>
+                    <span><Spline scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" />
+</span>
                   </a>
             
                 </div>
