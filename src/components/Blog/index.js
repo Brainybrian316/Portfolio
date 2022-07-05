@@ -1,14 +1,10 @@
 import { dbBlogsList } from '../../utils/dbBlogs';
 import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './slider.css';
 
 export default function Blog() {
 
 
-	const faArrowLeftIcon = <FontAwesomeIcon icon={faArrowLeft} className="prev" />;
-	const faArrowRightIcon = <FontAwesomeIcon icon={faArrowRight} className="next"  />;
 
 
 
@@ -23,7 +19,7 @@ export default function Blog() {
         </Row>
       </Container>
       <Container>
-        <Carousel fade prevIcon={faArrowLeftIcon} nextIcon={faArrowRightIcon}>
+        <Carousel fade>
           {dbBlogsList.map((blog, index) => (
             <Carousel.Item key={index} interval={10000}>
               <Image src={blog.image} alt={blog.title} rounded fluid/>
