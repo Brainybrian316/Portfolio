@@ -31,50 +31,11 @@ body {
 
 #btn-hero {
   background-color: transparent;
-  border-radius: 45% 3px;
-  color: #b4b4b4;
-  font-size: 1.5rem;
   text-decoration: none;
   display: inline-block;
-  cursor: pointer;
   text-align: center;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #b4b4b4;
-  top: -10px;
-  -webkit-font-smoothing: antialiased;
-  transition: all 0.3s;
 }
 
-#btn-hero span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.3s;
-}
-
-#btn-hero span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.3s;
-}
-
-#btn-hero:hover,
-#btn-hero:focus {
-  background-color: grey;
-  color: blue;
-}
-
-#btn-hero:hover span {
-  padding-right: 25px;
-}
-
-#btn-hero:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 
 #Name,

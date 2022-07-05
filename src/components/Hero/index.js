@@ -22,7 +22,8 @@ export default function Hero(props) {
           backgroundColor: 0xf0f11,
           amplitudeFactor: 1.1,
           xOffset: 0.33,
-          yOffset: -0.12,
+          yOffset: 0.00,
+          size: 2.00
         }),
       );
     }
@@ -45,10 +46,10 @@ export default function Hero(props) {
                   I'm a Full-Stack Web Developer.
                 </p>
                 <div>
-                  <a href="#Projects" class="btn btn-primary" id="btn-hero">
-                    <span>View My Work</span>
+                  <a type="disabled" id="btn-hero">
+                    <span>   <Spline scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" /></span>
                   </a>
-                  <Spline className="spline" scene="https://prod.spline.design/Wuect47Lqcexw4QM/scene.splinecode" />
+            
                 </div>
               </div>
             </div>
