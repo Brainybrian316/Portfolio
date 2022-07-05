@@ -39,7 +39,7 @@ export default function Contact(props) {
     <>
 
       <Container className='text-center text-white pb-3 pt-5'>
-            <h1>Contact</h1>
+            <h1 id="Contact">Contact</h1>
 					
       </Container>
 

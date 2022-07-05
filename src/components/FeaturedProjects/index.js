@@ -6,7 +6,7 @@ export default function featuredProjects() {
 		<Container>
 		<Row>
 			<Col className="mt-5 pt-5">
-				<h1 className="text-center">Projects</h1>
+				<h1 className="text-center" id="Projects">Projects</h1>
 				<hr />
 			</Col>
 		</Row>

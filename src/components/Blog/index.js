@@ -17,7 +17,7 @@ export default function Blog() {
       <Container>
         <Row>
           <Col className="mt-5 pt-5">
-            <h1 className="text-center">Blog</h1>
+            <h1 className="text-center" id="Blog">Blog</h1>
             <hr />
           </Col>
         </Row>
