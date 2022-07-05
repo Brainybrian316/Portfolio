@@ -56,11 +56,11 @@ export default function About() {
             <a href="mailto:brainybrian316@gmail.com" className="fs-1">
               <i className="fa-solid fa-envelope px-2 text-warning"></i>
             </a>
-            <a>
+            <span>
             <Image className='wrapper2'
                   src={require('../../assets/images/grogu.gif')}
                   fluid />
-            </a>
+            </span>
                 
        
           </Col>

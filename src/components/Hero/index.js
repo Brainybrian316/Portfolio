@@ -1,6 +1,4 @@
-import Spline from '@splinetool/react-spline';
-import styled from 'styled-components';
-import {Container, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import './hero.css';
 import Clouds from 'vanta/dist/vanta.clouds.min';
 import { useEffect, useRef, useState } from 'react';

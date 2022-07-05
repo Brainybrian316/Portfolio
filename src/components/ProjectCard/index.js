@@ -1,4 +1,4 @@
-import { Button, Card, Col, Image, Overlay, OverlayTrigger } from 'react-bootstrap';
+import { Button, Col, Image } from 'react-bootstrap';
 import GalleryModal from '../Modal';
 import React, { useState } from 'react';
 import './gallery.css';
@@ -30,19 +30,3 @@ export default function ProjectCard({ project }) {
   );
 }
 
-{
-  /* <div className="hovereffect">
-<Image id='img' src={project.image} fluid rounded ></Image>
-<div className="overlay">
-  <h2>
-    {project.title}
-    <br />
-    <span className="languages">{project.languages}</span>
-  </h2>
-  <Button className="info"  onClick={() => setModalShow(true)}>
-    Learn More
-  </Button>
-
-</div>
-</div> */
-}

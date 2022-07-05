@@ -1,5 +1,5 @@
-import { Container, Row, Image, Button } from 'react-bootstrap';
-import React, { useEffect, useState } from 'react';
+import { Container, Row} from 'react-bootstrap';
+import React, { useEffect} from 'react';
 import './filter.css';
 import { projectsList } from '../../utils/dbProjects';
 import ProjectCard from '../ProjectCard';
