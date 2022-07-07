@@ -11,13 +11,16 @@ import 'animate.css';
 
 export default function Projects() {
 
+
+
+
   useEffect(() => {
      mixitup('.g-2', {
       selectors: {
-        target: '.mix'
+        target: '[data-ref="mixIt"]',
       },
       load: {
-        filter: '.mix'
+        filter: 'all',
       },
       animation: {
         duration: 250,
@@ -30,20 +33,21 @@ export default function Projects() {
  
   return (
     <>
-      <Container className="mt-3 text-center" fluid>
-        <button type="button" id="filterBtn" data-filter="all">
+      <Container className="mt-3 text-center controls" fluid>
+        <button type="button" className=" control mixitup-control-active" id="filterBtn" data-filter="all">
           Show all
         </button>
-        <button type="button"  id="filterBtn" data-filter=".react">
+        <button type="button"  className="control"   id="filterBtn" data-filter=".react">
           React
         </button>
-        <button type="button" id="filterBtn" data-filter=".fullstack">
+        <button type="button"   className="control"  
+        id="filterBtn" data-filter=".fullstack">
           Full-Stack
         </button>
-        <button type="button" id="filterBtn" data-filter=".node">
+        <button type="button"  className="control"   id="filterBtn" data-filter=".node">
           Node.js
         </button>
-        <button type="button" id="filterBtn" data-filter=".frontend">
+        <button type="button"  className="control"  id="filterBtn" data-filter=".frontend">
           Front-End
         </button>
       </Container>

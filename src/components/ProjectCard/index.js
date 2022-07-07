@@ -9,7 +9,8 @@ export default function ProjectCard({ project }) {
 
   return (
     <>
-      <Col lg={4} md={6} sm={12} className={`mix ${project.category}`} data-order="1">
+      <Col lg={4} md={6} sm={12} className={`${project.category}`} data-order="1"
+      data-ref="mixIt">
         <div className="hovereffect">
           <Image src={project.image} alt={project.title}  fluid id="img-size"/>
           <div className="overlay">
