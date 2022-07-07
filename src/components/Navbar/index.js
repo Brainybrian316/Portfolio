@@ -19,23 +19,23 @@ export default function navbar() {
           <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto nav-link">
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
               <Nav.Link href="#Home">HOME</Nav.Link>
             </motion.Toggle>
 
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
               <Nav.Link href="#About" >ABOUT</Nav.Link>
             </motion.Toggle>
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }} className="example">
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }} className="example">
               <Nav.Link href="#Projects">PROJECTS</Nav.Link>
             </motion.Toggle>
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
               <Nav.Link href="#Blog">BLOG</Nav.Link>
             </motion.Toggle>
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
               <Nav.Link href="#Contact">CONTACT</Nav.Link>
             </motion.Toggle>
-            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 0.8 }}>
+            <motion.Toggle whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
               <Nav.Link
                 href="https://docs.google.com/document/d/1PeP8jPx4ct_WFCPPNeYYgJaiSRx9p8il5QjwZ7s0wbQ/edit?usp=sharing"
                 target="_blank"
