@@ -5,6 +5,10 @@ import './slider.css';
 export default function Blog() {
 
 
+  const blog = dbBlogsList;
+
+  //  set blog.primarySource to fallback on blog.image if it is not available
+  const image = blog.image ? blog.image : blog.primarySource;
 
 
 
@@ -22,7 +26,7 @@ export default function Blog() {
         <Carousel fade>
           {dbBlogsList.map((blog, index) => (
             <Carousel.Item key={index} interval={10000}>
-              <Image src={blog.image} alt={blog.title} rounded fluid/>
+              <Image src={blog.primarySource} alt={blog.title} rounded fluid/>
               <Carousel.Caption >
                 <h3>{blog.title}</h3>
                 <p>{blog.description}</p>
