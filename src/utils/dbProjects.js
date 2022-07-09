@@ -58,7 +58,7 @@ export const projectsList = [{
 },
 {
   id: 6,
-  image: require('../assets/images/trending_3.png'),
+  image: require('../assets/images/quick_read_5.png'),
   title: "Employee-Tracker",
   description: "A backend development application that creates an interface that will allow non-developers to easily view and interact with information stored in databases(CMS).",
   languages: "Node.js, Inquirer, and MySQL",
