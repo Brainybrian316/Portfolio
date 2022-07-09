@@ -7,6 +7,16 @@ import './about.css';
 
 
 export default function About() {
+
+  const image1 = ('../assets/images/grogu.gif');
+ const  image2 = 'https://res.cloudinary.com/dbgsvyi21/image/upload/v1657407214/grogu_vmhkbh.gif'
+
+ if (!image2) {
+   image2 = image1;
+ }
+  
+
+
   return (
     <section id="About">
       <Container>
@@ -59,7 +69,7 @@ export default function About() {
             </a>
             <span>
             <Image className='wrapper2'
-                  src={require('../../assets/images/grogu.gif')}
+                  src={image2}
                   fluid />
             </span>
                 
