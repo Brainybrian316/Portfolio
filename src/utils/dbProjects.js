@@ -2,6 +2,8 @@
 
 export const projectsList = [{
   id: 1,
+  
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657398786/dev_nyk7hp.png",
   image: require('../assets/images/dev.png'),
   title: 'DevCloud',
   description: 'This is a website used to check meant to grab anything a new web developer may need and put it all in one place.',
@@ -14,6 +16,7 @@ export const projectsList = [{
 },
 {
   id:2,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399186/tech_q4d30p.png",
   image: require('../assets/images/tech.png'),
   title: 'Tech Blog',
   description: ' A CMS-style Blog Application The site is similar to Wordpress site, where developers can make blog post',
@@ -25,6 +28,7 @@ export const projectsList = [{
 },
 {
   id: 3,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399186/Team-profile-generator-sample_qv3rlg.png",
   image: require('../assets/images/Team-profile-generator-sample.png'),
   title: 'Team Profile Generator',
   description: "A node package used to generate a webpage that will display a team of employees basic info. This will enable the user to have quick access to their employees email's and GitHub profiles.",
@@ -36,6 +40,7 @@ export const projectsList = [{
 },
 {
   id: 4,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399185/Password-generator_zniqy4.png",
   image: require("../assets/images/Password-generator.png"),
   title: "Password Generator",
   description: "This is a password generator used to create random password. The user can choose the length of the password and the number of characters to generate the password",
@@ -47,6 +52,7 @@ export const projectsList = [{
 },
 {
   id: 5,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399186/quick_read_5_qyt0qd.png",
   image: require('../assets/images/quick_read_5.png'),
   title: "README.md Generator",
   description: "This is a node based README.md generator. You are given a set of prompts in the CLI. Once you answer all the prompts a README.md is automatically generated.",
@@ -58,6 +64,7 @@ export const projectsList = [{
 },
 {
   id: 6,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399186/trending_3_udungt.png",
   image: require('../assets/images/trending_3.png'),
   title: "Employee-Tracker",
   description: "A backend development application that creates an interface that will allow non-developers to easily view and interact with information stored in databases(CMS).",
@@ -69,6 +76,7 @@ export const projectsList = [{
 },
 {
   id: 7,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399186/work_podyfy.png",
   image: require('../assets/images/work.png'),
   title: "WorkDay Scheduler",
   description: "This is a Workday-Scheduler used to track your task for the day. The task will update the color of each time block to represent whether a task is past, present, or future time.",
@@ -80,7 +88,7 @@ export const projectsList = [{
 },
 {
   id: 8,
-  image: require('../assets/images/code.png'),
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399185/code_hckjts.png",
   title: "Coding Quiz",
   description: "A dynamically quiz that utilizes LocalStorage to save results. This is a coding quiz used to test your knowledge on different programming languages.",
   languages: "HTML, CSS, Javascript",
@@ -91,6 +99,7 @@ export const projectsList = [{
 },
 {
   id: 9,
+  primarySource: "https://res.cloudinary.com/dbgsvyi21/image/upload/v1657399187/quick_read_4_kyluv5.png",
   image: require('../assets/images/quick_read_4.png'),
   title: "E-Commerce App",
   description: "A backend development application that creates a database for an e-commerce site that will utilize Object-Relational Mapping to interact with the database.",
