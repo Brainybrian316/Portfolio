@@ -21,7 +21,7 @@ function App() {
 }, []);
 
   return (
-    <body>
+    <>
       <Navbar />
       <Hero/>
       <div 
@@ -47,7 +47,7 @@ function App() {
       </Container>
       </div>
 
-    </body>
+    </>
   );
 }
 

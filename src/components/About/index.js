@@ -8,8 +8,8 @@ import './about.css';
 
 export default function About() {
 
-  const image1 = ('../assets/images/grogu.gif');
- const  image2 = 'https://res.cloudinary.com/dbgsvyi21/image/upload/v1657407214/grogu_vmhkbh.gif'
+let image1 = ('../assets/images/grogu.gif');
+ let  image2 = 'https://res.cloudinary.com/dbgsvyi21/image/upload/v1657407214/grogu_vmhkbh.gif'
 
  if (!image2) {
    image2 = image1;
@@ -97,7 +97,7 @@ export default function About() {
             </p>
           </Col>
           <Col md={6} sm={12}>
-            <p>
+            <div>
               What I bring to every project:
               <ul>
                 <li> Problem-solving skills and perseverance</li>
@@ -108,7 +108,7 @@ export default function About() {
               </ul>
               I am excited to leverage my skills in the future as part of a quality-driven team.
               Let's <a href="#Contact">connect</a> and chat about our next project.
-            </p>
+            </div>
           </Col>
         </Row>
       </Container>

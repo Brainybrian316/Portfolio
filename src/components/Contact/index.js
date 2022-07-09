@@ -48,7 +48,7 @@ export default function Contact(props) {
 			<Container >	
 				<Row className="mt-5 text-white">
             <form className="contact-form" action="" onSubmit={sendEmail}>
-              <label for="Name" className="form-label">
+              <label htmlFor="Name" className="form-label">
                 Name:
               </label>
               <input
@@ -60,7 +60,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Email" className="form-label">
+              <label htmlFor="Email" className="form-label">
                 Email:
               </label>
               <input
@@ -72,7 +72,7 @@ export default function Contact(props) {
                 required
               />
 
-              <label for="Message" className="form-label">
+              <label htmlFor="Message" className="form-label">
                 Message:
               </label>
               <textarea
