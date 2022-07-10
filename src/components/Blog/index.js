@@ -34,8 +34,7 @@ export default function Blog() {
                   href={blog.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-primary"
-                >
+                  className="btn btn-primary">
                   Read More
                 </a>
               </Carousel.Caption>

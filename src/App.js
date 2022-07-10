@@ -12,10 +12,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 import { useEffect } from 'react';
 
-
-
-
-
 function App() {
   useEffect(() => {
   Aos.init(
@@ -28,8 +24,7 @@ function App() {
       <Hero/>
       <div 
       data-aos="fade-up"
-      data-aos-offset="360"
-      >
+      data-aos-offset="360">
       <About />
       </div>
       <div data-aos="fade-right">

@@ -72,13 +72,11 @@ let image1 = ('../assets/images/grogu.gif');
                   src={image2}
                   fluid />
             </span>
-                
-       
           </Col>
         </Row>
       </Container>
 
-      <Container className="bg-black text-white rounded mt-2">
+      <Container className="bg-black text-white rounded mt-2 p-2">
         <Row>
           <Col md={6} sm={12}>
             <h1 className="text-info">Technical Skills:</h1>
@@ -97,8 +95,9 @@ let image1 = ('../assets/images/grogu.gif');
             </p>
           </Col>
           <Col md={6} sm={12}>
-            <div>
+            <p>
               What I bring to every project:
+            </p>
               <ul>
                 <li> Problem-solving skills and perseverance</li>
                 <li> An understanding of UX/UI principles</li>
@@ -108,7 +107,7 @@ let image1 = ('../assets/images/grogu.gif');
               </ul>
               I am excited to leverage my skills in the future as part of a quality-driven team.
               Let's <a href="#Contact">connect</a> and chat about our next project.
-            </div>
+            
           </Col>
         </Row>
       </Container>
