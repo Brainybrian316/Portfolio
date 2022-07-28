@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
     <nav className="navbar navbar-expand-lg sticky-top" style={{ background: 'black' }} >
-  <div className="container-fluid">
+  <div className="container-fluid ">
     <a className="navbar-brand" href="#Home" id="fancy-text-nav" >
     <i className="fa-solid fa-dragon"></i>
     <i className="fa-solid fa-b"></i>
@@ -20,23 +20,23 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
       <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-          <a className="nav-link active" aria-current="page" href="#Home">HOME</a>
+          <a className="nav-link active text-white" aria-current="page" href="#Home">HOME</a>
         </motion.li>
         
         <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-          <a className="nav-link" href="#About">ABOUT</a>
+          <a className="nav-link text-white" href="#About">ABOUT</a>
         </motion.li>
         <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-          <a className="nav-link" href="#Projects">PROJECTS</a>
+          <a className="nav-link text-white" href="#Projects">PROJECTS</a>
         </motion.li>
         <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-          <a className="nav-link" href="#Blog">BLOGS</a>
+          <a className="nav-link text-white" href="#Blog">BLOGS</a>
         </motion.li>
         <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-          <a className="nav-link" href="#Contact">CONTACT</a>
+          <a className="nav-link text-white" href="#Contact">CONTACT</a>
         </motion.li>
         <motion.li className="nav-item" whileHover={{ scale: 1.0 }} whileTap={{ scale: 1.1 }}>
-        <a className='nav-link'
+        <a className='nav-link text-white'
         href="https://docs.google.com/document/d/1PeP8jPx4ct_WFCPPNeYYgJaiSRx9p8il5QjwZ7s0wbQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
         </motion.li>
       </ul>
