@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <>
       <Container className="mt-3 text-center" fluid>
-        <button type="button" id="filterBtn" data-filter="all" autoFocus>
+        <button type="button" id="filterBtn" data-filter="all">
           Show all
         </button>
         <button type="button"    id="filterBtn" data-filter=".react">
