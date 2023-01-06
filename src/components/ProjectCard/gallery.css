@@ -1,6 +1,6 @@
 .hovereffect {
   width: 100%;
-height: inherit;
+  height: inherit;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -12,7 +12,7 @@ height: inherit;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -26,7 +26,7 @@ height: inherit;
   transform: scale(1);
 }
 
-.hovereffect:hover  h2 {
+.hovereffect:hover h2 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -34,10 +34,9 @@ height: inherit;
   font-size: 18px;
   padding: 3px;
   background: rgba(0, 0, 0, 0.6);
-  animation:bounceInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: .75s; /* don't forget to set a duration! */
- }
-
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.75s; /* don't forget to set a duration! */
+}
 
 .hovereffect:hover .info {
   text-transform: uppercase;
@@ -49,9 +48,9 @@ height: inherit;
   border: 1px solid aqua;
   margin: 12% 0 0 0;
   background-color: transparent;
-  animation: rotateInUpLeft ; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: .25s; /* don't forget to set a duration! */
- }
+  animation: rotateInUpLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.25s; /* don't forget to set a duration! */
+}
 
 .hovereffect .info:hover {
   box-shadow: 0 0 10px #fff;
@@ -59,7 +58,6 @@ height: inherit;
 
 .languages {
   color: aqua;
-  font-size: .5em;
+  font-size: 0.5em;
   text-align: center;
 }
-
