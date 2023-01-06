@@ -1,30 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.db3e54bc.css",
-    "main.js": "/static/js/main.f84d12df.js",
+    "main.js": "/static/js/main.902bc373.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/blog3.png": "/static/media/blog3.b27b79540d31fde009bf.png",
+    "static/media/Blog.png": "/static/media/Blog.64eb2aa52766f1382fe5.png",
     "static/media/blog2.png": "/static/media/blog2.566f3888d9557e252620.png",
     "static/media/sweet.png": "/static/media/sweet.c8d291028ff737d262d0.png",
     "static/media/dev.png": "/static/media/dev.954552157e0e83fea7a6.png",
     "static/media/quick_read_4.png": "/static/media/quick_read_4.bc578f903be6c992dbdc.png",
-    "static/media/blog1.png": "/static/media/blog1.67ca1b454b944dd55c53.png",
     "static/media/devise.png": "/static/media/devise.1355c49a775f3c91c612.png",
     "static/media/trending_3.png": "/static/media/trending_3.1adac2aac37e84af8c47.png",
     "static/media/quick_read_5.png": "/static/media/quick_read_5.a16ef74efb893b95bc58.png",
     "static/media/tech.png": "/static/media/tech.b00d1a5b8d1d040eba5e.png",
+    "static/media/Python-News-Feed.png": "/static/media/Python-News-Feed.3d405a662da07833b2d6.png",
     "static/media/work.png": "/static/media/work.963a3584e79b8d8f476a.png",
+    "static/media/OOP.png": "/static/media/OOP.27a81d186d0174c67dc5.png",
+    "static/media/Java-Tech-News.png": "/static/media/Java-Tech-News.e285c9ea58d831244a03.png",
+    "static/media/RazorPizzeria.png": "/static/media/RazorPizzeria.179b6a8a5520dec6a123.png",
     "static/media/Team-profile-generator-sample.png": "/static/media/Team-profile-generator-sample.fb4e62e03588059602f6.png",
     "static/media/prof-b.jpeg": "/static/media/prof-b.d290fb61fe3778ffe8cc.jpeg",
     "static/media/Password-generator.png": "/static/media/Password-generator.0195a299d2d7522815dd.png",
     "static/media/me.png": "/static/media/me.12ab4af5ec1450fd20a4.png",
     "index.html": "/index.html",
     "main.db3e54bc.css.map": "/static/css/main.db3e54bc.css.map",
-    "main.f84d12df.js.map": "/static/js/main.f84d12df.js.map",
+    "main.902bc373.js.map": "/static/js/main.902bc373.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db3e54bc.css",
-    "static/js/main.f84d12df.js"
+    "static/js/main.902bc373.js"
   ]
 }
