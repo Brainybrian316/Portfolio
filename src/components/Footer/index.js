@@ -11,7 +11,7 @@ export default function Footer() {
             <i className="fa-solid fa-m"></i>
             &ensp; Made with love by Brian Mojica.
           </div>
-          <div className="col-md-12 text-center">
+          <div className="col-md-12 text-center footer-text-color">
           <p>&copy; 2022 All rights reserved.</p>
           </div>
         </div>

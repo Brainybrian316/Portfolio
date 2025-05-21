@@ -7,3 +7,7 @@
   -webkit-text-fill-color: transparent;  
   animation: move 500s linear infinite;
 }
+
+.footer-text-color {
+  color: rgba(0, 0, 0, 0.392);
+}

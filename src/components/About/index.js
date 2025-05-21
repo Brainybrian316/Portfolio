@@ -1,116 +1,170 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Image from 'react-bootstrap/Image';
-import './about.css';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import { FaGithubAlt, FaLinkedin, FaEnvelope, FaBookmark, FaHeart } from 'react-icons/fa';
+import styles from './about.module.css';
 
+const About = () => {
+  const profileImage = require('../../assets/images/prof-b.jpeg');
+  const groguGif = 'https://res.cloudinary.com/dbgsvyi21/image/upload/v1657407214/grogu_vmhkbh.gif';
 
-export default function About() {
+  const skills = [
+    'Full-Stack Development (MERN Stack)',
+    'JavaScript (ES6+) / TypeScript / Python',
+    'React.js / Next.js / Redux',
+    'Node.js / Express.js / RESTful APIs',
+    'MongoDB / PostgreSQL / MySQL',
+    'HTML5 / CSS3 / Tailwind CSS / Bootstrap',
+    'Git / GitHub / GitLab',
+    'Agile / Scrum Methodologies',
+    'AWS / Heroku / Vercel',
+    'Jest / Mocha / Chai',
+    'Docker / Containerization',
+    'CI/CD Pipelines',
+    'Responsive Web Design',
+    'Cross-browser Compatibility',
+    'Performance Optimization'
+  ];
 
-let image1 = ('../assets/images/grogu.gif');
- let  image2 = 'https://res.cloudinary.com/dbgsvyi21/image/upload/v1657407214/grogu_vmhkbh.gif'
-
- if (!image2) {
-   image2 = image1;
- }
-  
-
+  const strengths = [
+    'Full-Stack Development: Experience in both frontend and backend technologies',
+    'Technical Leadership: Led development teams and mentored junior developers',
+    'Problem Solving: Strong analytical and debugging skills',
+    'Agile Development: Experience working in fast-paced Agile environments',
+    'Code Quality: Focus on writing clean, maintainable, and efficient code',
+    'Collaboration: Excellent teamwork and communication skills',
+    'Continuous Learning: Passion for staying updated with latest technologies',
+    'Project Management: Experience in planning and delivering complex projects',
+    'Code Review: Strong focus on code quality and best practices',
+    'Testing: Experience with unit and integration testing'
+  ];
 
   return (
-    <section id="About">
+    <section id="about" className={styles.aboutSection}>
       <Container>
-		<Row>
-			<Col className="mt-5 pt-5">
-				<h1 className="text-center">About Me</h1>
-				<hr />
-			</Col>
-		</Row>
-	</Container>
-
-      <Container className="bg-black text-white rounded p-0">
-        <Row>
-          <Col lg={4} md={6} sm={12}>
-            <Image
-              src={require('../../assets/images/prof-b.jpeg')}
-              alt="Brian"
-              className="rounded"
-              fluid
-            />
-          </Col>
-          <Col lg={8} md={6} sm={12}>
-          <h1 className="text-info">Brian Mojica</h1>
-            <p>
-              Mission-driven full-stack Web Developer & Educator with a passion for thoughtful UI,
-              collaboration, and teaching. I am innovative problem-solver with a passion for
-              developing apps. I am continuing my studies by expanding my knowledge in IOS
-              development, more languages, libraries, and concepts.
-            </p>
-            <ListGroup className="list-group-flush rp">
-              <ListGroup.Item className="bg-black text-white">
-                Full-Stack Web Developer & Educator
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white">
-                University of Central Florida Graduate
-              </ListGroup.Item>
-              <ListGroup.Item className="bg-black text-white">
-                <i className="fa-regular fa-bookmark"></i> HTML, CSS, JavaScript, & React.js{' '}
-                <i className="fa-regular fa-heart"></i>
-              </ListGroup.Item>
-            </ListGroup>
-            <a href="https://github.com/Brainybrian316" className="fs-1">
-              <i className="fa-brands fa-github-alt px-2 text-warning"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/brian-mojica-63b638221" className="fs-1">
-              <i className="fa-brands fa-linkedin px-2 text-warning"></i>
-            </a>
-            <a href="mailto:brainybrian316@gmail.com" className="fs-1">
-              <i className="fa-solid fa-envelope px-2 text-warning"></i>
-            </a>
-            <span>
-            <Image className='wrapper2'
-                  src={image2}
-                  fluid />
-            </span>
+        <Row className="justify-content-center">
+          <Col xs={12} className="text-center my-5">
+            <h1 className={styles.sectionTitle}>About Me</h1>
+            <div className={styles.divider} />
           </Col>
         </Row>
-      </Container>
 
-      <Container className="bg-black text-white rounded mt-2 p-2">
-        <Row>
-          <Col md={6} sm={12}>
-            <h1 className="text-info">Technical Skills:</h1>
-            <p>
-              MERN Stack (MongoDB, Express.js, React.js, Node.js) jQuery, Bootstrap, JavaScript,
-              MySQL
-            </p>
-            <p>
-              Core Concepts: Security and Session Storage, User Authentication, Responsive Design,
-              Cookies, Local Storage
-            </p>
-            <p>
-              My goal and desire are to leave my mark in the tech world whether that be through open
-              source contributions, project tutorials, and of course the career opportunities I
-              endeavor in.
-            </p>
+        <Row className={`${styles.aboutContainer} align-items-center`}>
+          <Col lg={4} md={6} className="mb-4 mb-md-0">
+            <div className={styles.imageWrapper}>
+              <Image 
+                src={profileImage} 
+                alt="Brian Mojica"
+                className={styles.profileImage}
+                fluid
+              />
+            </div>
           </Col>
-          <Col md={6} sm={12}>
-            <p>
-              What I bring to every project:
-            </p>
-              <ul>
-                <li> Problem-solving skills and perseverance</li>
-                <li> An understanding of UX/UI principles</li>
-                <li>Creativity and passion</li>
-                <li>Dedication to teamwork and flexible collaboration</li>
-                <li>Foundational knowledge of agile software development principles</li>
-              </ul>
-              I am excited to leverage my skills in the future as part of a quality-driven team.
-              Let's <a href="#Contact">connect</a> and chat about our next project.
+          
+          <Col lg={8} md={6}>
+            <div className={styles.aboutContent}>
+              <h1 className={styles.name}>Brian Mojica</h1>
+              <h2 className={styles.title}>Senior Full-Stack Developer</h2>
+              
+              <p className={styles.bio}>
+                Results-driven Full-Stack Developer with extensive experience in designing and implementing scalable web applications.
+                Proven track record of leading development teams, architecting robust solutions, and delivering high-quality software.
+                Passionate about creating efficient, maintainable code and mentoring the next generation of developers.
+              </p>
+              
+              <p className={styles.bio}>
+                With expertise in both frontend and backend technologies, I excel at bridging the gap between user experience and technical implementation.
+                My experience spans across various industries, from healthcare to finance, where I've consistently delivered impactful solutions.
+              </p>
+              
+              <div className={styles.socialLinks}>
+                <a 
+                  href="https://github.com/Brainybrian316" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithubAlt className={styles.socialIcon} />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/brian-mojica-63b638221" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin className={styles.socialIcon} />
+                </a>
+                <a 
+                  href="mailto:brainybrian316@gmail.com" 
+                  aria-label="Email"
+                >
+                  <FaEnvelope className={styles.socialIcon} />
+                </a>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <Row className={`${styles.skillsContainer} mt-5`}>
+          <Col lg={6} className="mb-4 mb-lg-0">
+            <h3 className={styles.sectionSubtitle}>
+              <FaBookmark className="me-2" />
+              Technical Skills
+            </h3>
+            <div className={styles.skillsGrid}>
+              {skills.map((skill, index) => (
+                <div key={index} className={styles.skillItem}>
+                  {skill}
+                </div>
+              ))}
+            </div>
             
+            <div className="mt-4">
+              <p>
+                With extensive experience in full-stack development, I've architected and implemented
+                scalable web applications using modern JavaScript frameworks and cloud technologies.
+                My expertise includes building responsive UIs, designing RESTful APIs, and optimizing
+                application performance for maximum efficiency and user satisfaction.
+              </p>
+              <p className="mt-3">
+                I'm particularly passionate about implementing best practices in code quality,
+                testing, and deployment automation to ensure reliable and maintainable software solutions.
+              </p>
+            </div>
+          </Col>
+          
+          <Col lg={6}>
+            <h3 className={styles.sectionSubtitle}>
+              <FaHeart className="me-2" />
+              What I Bring
+            </h3>
+            <ul className={styles.strengthsList}>
+              {strengths.map((strength, index) => (
+                <li key={index} className={styles.strengthItem}>
+                  {strength}
+                </li>
+              ))}
+            </ul>
+            
+            <p className="mt-3">
+              I'm excited to leverage my skills as part of a quality-driven team.
+              Let's <a href="#contact" className={styles.highlightLink}>connect</a> and chat about our next project!
+            </p>
+            
+            <div className={`${styles.funElement} mt-3`}>
+              <img 
+                src={groguGif} 
+                alt="Grogu having fun" 
+                className={styles.groguGif}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = '../assets/images/grogu.gif';
+                }}
+              />
+            </div>
           </Col>
         </Row>
       </Container>
     </section>
   );
-}
+};
+
+export default About;

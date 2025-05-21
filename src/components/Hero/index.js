@@ -1,59 +1,85 @@
-import { Image } from 'react-bootstrap';
-import './hero.css';
-import Clouds from 'vanta/dist/vanta.clouds.min';
 import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import './hero.css';
 
-export default function Hero(props) {
-  const [vantaEffect, setVantaEffect] = useState(0);
-  const myRef = useRef(null);
+export default function Hero() {
+  const [isHovered, setIsHovered] = useState(false);
+  const words = ['Developer', 'Designer', 'Problem Solver'];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
   useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        Clouds({
-          el: myRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          skyColor: 0x50505,
-          cloudColor: 0x2a2a3e,
-          cloudShadowColor: 0x4671d2,
-          sunColor: 0xffffff,
-          sunGlareColor: 0xfa,
-          sunlightColor: 0x13ff
-        }),
-      );
-    }
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <>
-      <div id="vanta-canvas" ref={myRef}>
-        <div className="container hero" id="Home">
-          <div className="row">
-            <div className="col-12 mt-4 pt-4 fs-1">
-              <div className="text-center text-light" id="hero-text">
-                <p>
-                  Hello, I'm&nbsp;&nbsp;
-                  <span id="fancy-text-hero">Brian Mojica</span>
-                  <br />
-                  I'm a Full-Stack Web Developer.
-                </p>
-                  <div className="wrapper">
-                    <Image 
-                  src={require('../../assets/images/me.png')}
-                  fluid />
-                  </div>
-             
-              </div>
-            </div>
+    <section className="hero-section">
+      <div className="hero-content">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="hero-text"
+        >
+          <h1 className="hero-title">
+            Hi, I'm <span className="highlight">Brian Mojica</span>
+          </h1>
+          <div className="typewriter">
+            <h2 className="hero-subtitle">
+              I'm a <span className="changing-word">{words[currentWordIndex]}</span>
+              <span className="cursor">|</span>
+            </h2>
           </div>
+          <p className="hero-description">
+            Full-stack developer with a passion for creating beautiful, functional web applications.
+          </p>
+          <div className="hero-buttons">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="#projects"
+              className="primary-btn"
+            >
+              View My Work
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="#contact"
+              className="secondary-btn"
+            >
+              Contact Me
+            </motion.a>
+          </div>
+        </motion.div>
+        <motion.div 
+          className="hero-image"
+          onHoverStart={() => setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
+          animate={{
+            y: isHovered ? -10 : 0,
+            rotate: isHovered ? 2 : 0,
+          }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
+          <div className="image-container">
+            <div className="glow"></div>
+            <img 
+              src={require('../../assets/images/me.png')} 
+              alt="Brian Mojica" 
+              className="profile-image"
+            />
+          </div>
+        </motion.div>
+      </div>
+      <div className="scroll-indicator">
+        <span>Scroll down</span>
+        <div className="mouse">
+          <div className="wheel"></div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -1,65 +1,98 @@
-import { Container, Row } from 'react-bootstrap';
-import React, { useEffect } from 'react';
-import './filter.css';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { projectsList } from '../../utils/dbProjects';
 import ProjectCard from '../ProjectCard';
-import mixitup from 'mixitup';
-import 'animate.css';
+import './projects.css';
+
+const categories = [
+  { id: 'all', name: 'All Projects' },
+  { id: 'react', name: 'React' },
+  { id: 'python', name: 'Python' },
+  { id: 'c#', name: 'C#' },
+  { id: 'node', name: 'Node.js' },
+];
 
 export default function Projects() {
-  useEffect(() => {
-    mixitup('.g-2', {
-      selectors: {
-        target: '[data-ref="mixIt"]',
-      },
-      load: {
-        filter: 'all',
-      },
-      animation: {
-        duration: 250,
-        nudge: false,
-        reverseOut: false,
-        effects: 'fade rotateX(90deg) stagger(30ms)',
-      },
-    });
-  });
+  const [activeCategory, setActiveCategory] = useState('all');
+  const [filteredProjects, setFilteredProjects] = useState(projectsList);
+
+  const filterProjects = (category) => {
+    setActiveCategory(category);
+    if (category === 'all') {
+      setFilteredProjects(projectsList);
+    } else {
+      const filtered = projectsList.filter(project => 
+        project.category.includes(category)
+      );
+      setFilteredProjects(filtered);
+    }
+  };
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+  };
 
   return (
-    <>
-      <Container className="mt-3 text-center" fluid>
-        <button type="button" id="filterBtn" data-filter="all">
-          Show all
-        </button>
-        <button type="button" id="filterBtn" data-filter=".react">
-          React
-        </button>
-        <button type="button" id="filterBtn" data-filter=".fullstack">
-          Full-Stack
-        </button>
-        <button type="button" id="filterBtn" data-filter=".node">
-          Node.js
-        </button>
-        <button type="button" id="filterBtn" data-filter=".frontend">
-          Front-End
-        </button>
-        <button type="button" id="filterBtn" data-filter=".python">
-          Python
-        </button>
-        <button type="button" id="filterBtn" data-filter=".c">
-          C#
-        </button>
-        <button type="button" id="filterBtn" data-filter=".java">
-          Java
-        </button>
-      </Container>
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <motion.div 
+          className="section-header"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2>My Projects</h2>
+          <p>Here are some of my recent works</p>
+        </motion.div>
 
-      <Container className="mt-3">
-        <Row className="g-2">
-          {projectsList.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <div className="filters">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              className={`filter-btn ${activeCategory === category.id ? 'active' : ''}`}
+              onClick={() => filterProjects(category.id)}
+            >
+              {category.name}
+            </button>
           ))}
-        </Row>
-      </Container>
-    </>
+        </div>
+
+        <motion.div 
+          className="projects-grid"
+          variants={container}
+          initial="hidden"
+          animate="show"
+        >
+          <AnimatePresence>
+            {filteredProjects.map((project) => (
+              <motion.div 
+                key={project.id}
+                className="project-item"
+                variants={item}
+                layout
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ProjectCard project={project} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      </div>
+    </section>
   );
 }
