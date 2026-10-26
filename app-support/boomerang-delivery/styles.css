@@ -1,0 +1,63 @@
+*{box-sizing:border-box}
+html{color-scheme:light;scroll-padding-top:24px}
+body{margin:0;background:#faf6e8;color:#263e3d;font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:#176b60;text-underline-offset:4px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #ad431f;outline-offset:5px;border-radius:4px}
+.wrap{width:min(1080px,calc(100% - 48px));margin:auto}
+.skip{position:absolute;top:-80px;left:24px;padding:10px;background:white;z-index:3}
+.skip:focus{top:10px}
+.top{border-bottom:1px solid #d7ded1}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0}
+.brand{font-weight:800;letter-spacing:.02em;text-decoration:none;color:#263e3d;display:flex;align-items:center;gap:10px}
+.brand svg{width:30px;height:30px;flex:none}
+nav{display:flex;gap:22px}
+nav a{display:flex;align-items:center;min-height:44px;font-size:16px;font-weight:650}
+nav [aria-current]{text-decoration-thickness:3px}
+.status{margin:0;padding:12px 0;font-size:14px;color:#4d625b;letter-spacing:.02em}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:#176b60;font-size:13px;font-weight:800}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:48px;padding:68px 0 54px}
+h1,h2,h3{line-height:1.14;letter-spacing:-.035em}
+h1{font-size:clamp(38px,6vw,68px);margin:14px 0 22px;font-weight:800}
+h2{font-size:28px;margin:38px 0 12px}
+h3{font-size:21px;margin:26px 0 8px}
+.lede{font-size:21px;color:#4d625b;max-width:58ch}
+.hero-art{width:100%;max-width:360px;justify-self:center}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.button{padding:12px 20px;border:1px solid #176b60;border-radius:14px;text-decoration:none;font-weight:700;min-height:48px;display:inline-flex;align-items:center;justify-content:center;background:#176b60;color:white}
+.button.secondary{background:transparent;color:#176b60}
+.links-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:0 0 56px}
+.entry{border-top:2px solid #b5cabe;padding:22px 0}
+.entry h2{margin:0 0 12px}
+.entry p{margin-bottom:12px}
+.document{max-width:760px;padding:48px 0 66px}
+.document h1{font-size:clamp(38px,6vw,56px)}
+.document p,.document ul{margin:0 0 18px}
+.document ul{padding-left:24px}
+.note{border-left:4px solid #b34b24;background:#fffdf4;padding:16px 20px;margin:28px 0;font-size:16px}
+.contact{background:#e4eee0;border-radius:20px;padding:26px;margin:28px 0}
+.contact h2{margin:0 0 10px}
+.email{overflow-wrap:anywhere;font-size:clamp(17px,3.5vw,23px);font-weight:700}
+.faq{border-top:1px solid #cbd5c5;padding-top:6px;margin-top:26px}
+.small{font-size:15px;color:#52665e}
+footer{border-top:1px solid #d7ded1;padding:28px 0 38px;font-size:14px;color:#52665e}
+.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{min-height:44px;display:inline-flex;align-items:center}
+svg{display:block}
+main{min-height:55vh}
+@media(max-width:650px){.wrap{width:calc(100% - 36px)}
+header{align-items:flex-start;flex-direction:column;gap:4px;padding:18px 0 8px}
+nav{gap:24px}
+.hero{grid-template-columns:1fr;gap:12px;padding:34px 0}
+.hero-art{max-width:250px;order:-1}
+.links-grid{grid-template-columns:1fr;gap:8px}
+.document{padding:26px 0 44px}
+.lede{font-size:19px}
+.contact{padding:20px}
+.actions{gap:10px}
+.button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}
+}
+
