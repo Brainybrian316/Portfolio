@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="How Boomerang Delivery and support emails handle information.">
 <title>Privacy · Boomerang Delivery</title>
+<link rel="canonical" href="https://brainybrian316.com/app-support/boomerang-delivery/privacy/">
 <link rel="stylesheet" href="../styles.css">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 </head>
@@ -23,13 +24,13 @@
 </nav>
 </header>
 </div>
-<p class="wrap status">Boomerang Delivery · In development. Not publicly released.</p>
+<p class="wrap status">Boomerang Delivery · Available on the App Store. Version 2.0 is being prepared for release.</p>
 <main id="main" class="wrap">
 <article class="document">
 <div class="eyebrow">Clear, small-print-free information</div>
 <h1>Privacy</h1>
 <p class="lede">How Boomerang Delivery and its app-support pages handle information. Other apps and the rest of the portfolio may have different practices.</p>
-<p class="small">Last updated: 26 October 2026. Boomerang Delivery is not publicly released.</p>
+<p class="small">Last updated: 13 November 2026. The version 2.0 release-policy check described below applies to the upcoming update.</p>
 <section>
 <h2>The game and on-device progress</h2>
 <p>Boomerang Delivery, by brainybrian316, is an offline puzzle game and does not require a game account. Stars, route selection, cosmetic preferences and settings are stored in the app’s local storage. There is no automatic cross-device progress sync. Device backups may include app data according to your Apple settings.</p>
@@ -37,8 +38,14 @@
 </section>
 <section>
 <h2>Apple purchases</h2>
-<p>The game is not publicly released and real purchases are not currently available. When optional purchases are enabled, Apple handles payment and account processing under its own policies. The app processes verified transaction information to provide and restore pack access. It does not receive payment-card details.</p>
+<p>Apple handles payment and account processing for optional purchases under its own policies. The app processes verified transaction information to provide and restore pack access. It does not receive payment-card details.</p>
 <p>Restoring a pack does not restore level progress from another device. Apple manages billing and refund requests.</p>
+</section>
+<section>
+<h2>Early-adopter eligibility in version 2.0</h2>
+<p>To determine eligibility for the early-adopter gift, the app verifies through Apple’s StoreKit that the original App Store acquisition was an eligible original version, then compares its acquisition date on your device with a public release cutoff. Existing grants and the notice’s shown-once marker are stored locally. These local records are not an account-wide notification history and may be removed when app data is deleted.</p>
+<p>The app requests a small JSON policy over HTTPS from <a href="https://brainybrian316.com/app-support/boomerang-delivery/policies/early-adopter-v1.json">this website’s release-policy address</a>. The policy may remain unavailable until the update is released. This request contains no receipt, Apple Account identifier, purchase history, level progress or settings, and does not use cookies. The app caches the first valid policy locally and can retry an unresolved check on launch, when returning to the app, or from Help. An explicit verification action may ask Apple to refresh acquisition information.</p>
+<p>The hosting provider still receives normal technical request information, which can include an IP address, user agent and request time. A missing policy or offline connection does not block gameplay. Previously granted gifts remain available offline.</p>
 </section>
 <section>
 <h2>Support emails</h2>
@@ -76,3 +83,4 @@
 </footer>
 </body>
 </html>
+
